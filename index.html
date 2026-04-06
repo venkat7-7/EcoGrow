@@ -1,0 +1,3756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="EcoGrow — Premium indoor plants delivered to your door. Expert care guides, pet-safe options." />
+    <meta property="og:title" content="EcoGrow — Bring Nature Indoors" />
+    <meta property="og:description"
+        content="Handpicked indoor plants with expert care guides, delivered to your door." />
+    <title>EcoGrow — Bring Nature Indoors</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+        }
+
+        body {
+            line-height: inherit;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            background-image: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+
+        img,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+        ol,
+        ul,
+        menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --forest-50: #f0fdf4;
+            --forest-100: #dcfce7;
+            --forest-200: #bbf7d0;
+            --forest-300: #86efac;
+            --forest-500: #22c55e;
+            --forest-600: #16a34a;
+            --forest-700: #15803d;
+            --forest-800: #166534;
+            --forest-900: #14532d;
+            --earth-500: #c4742a;
+            --earth-600: #a65820;
+            --sage-50: #f6f8f3;
+            --sage-100: #ecf0e6;
+            --sage-200: #d5dfca;
+            --sage-400: #87a872;
+            --sage-500: #658d51;
+            --sage-600: #4f7040;
+            --sage-700: #3f5a34;
+        }
+
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        body {
+            background-color: #f6f8f3;
+            background-image: radial-gradient(circle at 20% 20%, rgba(134, 239, 172, .12) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(101, 141, 81, .08) 0%, transparent 50%);
+        }
+
+
+        /* ── Dark Mode ── */
+        [data-theme="dark"] body {
+            background-color: #1a1f1a !important;
+            background-image: none !important;
+        }
+
+        [data-theme="dark"] .product-card {
+            background-color: #222822 !important;
+            border-color: #2e3a2e !important;
+        }
+
+        [data-theme="dark"] .modal-box {
+            background-color: #222822 !important;
+            color: #e8f0e8;
+        }
+
+        [data-theme="dark"] .cart-drawer {
+            background-color: #222822 !important;
+        }
+
+        [data-theme="dark"] .bg-white {
+            background-color: #222822 !important;
+        }
+
+        [data-theme="dark"] header {
+            background-color: rgba(26, 31, 26, 0.97) !important;
+        }
+
+        [data-theme="dark"] input,
+        [data-theme="dark"] select,
+        [data-theme="dark"] textarea {
+            background-color: #1e241e !important;
+            color: #e8f0e8 !important;
+            border-color: #2e3a2e !important;
+        }
+
+        [data-theme="dark"] .bg-sage-50,
+        [data-theme="dark"] .bg-forest-50 {
+            background-color: #1e241e !important;
+        }
+
+        [data-theme="dark"] .bg-sage-100 {
+            background-color: #232e23 !important;
+        }
+
+        [data-theme="dark"] .text-sage-400,
+        [data-theme="dark"] .text-sage-500 {
+            color: #7a9a7a !important;
+        }
+
+        [data-theme="dark"] .text-sage-600,
+        [data-theme="dark"] .text-sage-700 {
+            color: #8faf8f !important;
+        }
+
+        [data-theme="dark"] .text-forest-900 {
+            color: #c8e0c8 !important;
+        }
+
+        [data-theme="dark"] .text-forest-800 {
+            color: #b8d4b8 !important;
+        }
+
+        [data-theme="dark"] .border-sage-100,
+        [data-theme="dark"] .border-sage-200 {
+            border-color: #2e3a2e !important;
+        }
+
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow-md {
+            box-shadow: 0 1px 8px rgba(0, 0, 0, .4) !important;
+        }
+
+        [data-theme="dark"] .stat-card {
+            background-color: #1e241e !important;
+        }
+
+        /* ── AI Chatbot ── */
+        .chat-bubble {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 999;
+        }
+
+        .chat-btn {
+            width: 3.25rem;
+            height: 3.25rem;
+            border-radius: 50%;
+            background: var(--forest-700);
+            color: #fff;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(22, 101, 52, .35);
+            cursor: pointer;
+            border: none;
+            transition: transform .2s, background .2s;
+        }
+
+        .chat-btn:hover {
+            transform: scale(1.08);
+            background: var(--forest-800);
+        }
+
+        .chat-window {
+            position: fixed;
+            bottom: 5.5rem;
+            right: 1.5rem;
+            width: min(90vw, 360px);
+            height: 480px;
+            background: #fff;
+            border-radius: 1.25rem;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, .15);
+            display: flex;
+            flex-direction: column;
+            z-index: 998;
+            overflow: hidden;
+        }
+
+        [data-theme="dark"] .chat-window {
+            background: #222822;
+        }
+
+        .chat-header {
+            background: var(--forest-700);
+            color: #fff;
+            padding: .875rem 1.125rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: .875rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+
+        .chat-msg {
+            max-width: 82%;
+            padding: .5rem .75rem;
+            border-radius: .875rem;
+            font-size: .8125rem;
+            line-height: 1.5;
+            word-break: break-word;
+        }
+
+        .chat-msg.user {
+            background: var(--forest-600);
+            color: #fff;
+            align-self: flex-end;
+            border-bottom-right-radius: .25rem;
+        }
+
+        .chat-msg.bot {
+            background: #f0fdf4;
+            color: #1e3a1e;
+            align-self: flex-start;
+            border-bottom-left-radius: .25rem;
+        }
+
+        [data-theme="dark"] .chat-msg.bot {
+            background: #1e2e1e;
+            color: #c8e0c8;
+        }
+
+        .chat-msg.typing {
+            color: var(--sage-400);
+            font-style: italic;
+        }
+
+        .chat-input-row {
+            display: flex;
+            gap: .5rem;
+            padding: .75rem;
+            border-top: 1px solid #e8f0e8;
+            flex-shrink: 0;
+        }
+
+        [data-theme="dark"] .chat-input-row {
+            border-color: #2e3a2e;
+        }
+
+        .chat-input-row input {
+            flex: 1;
+            padding: .5rem .75rem;
+            border: 1px solid #d5dfca;
+            border-radius: .75rem;
+            font-size: .8125rem;
+            outline: none;
+            background: #fff;
+            color: #1a1a1a;
+        }
+
+        [data-theme="dark"] .chat-input-row input {
+            background: #1e241e !important;
+            color: #e8f0e8 !important;
+            border-color: #2e3a2e !important;
+        }
+
+        .chat-input-row input:focus {
+            border-color: var(--forest-500);
+        }
+
+        .chat-input-row button {
+            background: var(--forest-600);
+            color: #fff;
+            border: none;
+            border-radius: .75rem;
+            padding: .5rem .875rem;
+            font-size: .8125rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background .15s;
+        }
+
+        .chat-input-row button:hover {
+            background: var(--forest-700);
+        }
+
+        /* ── Toast Queue ── */
+        #toast-container {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: .5rem;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .toast-item {
+            background: var(--forest-800);
+            color: #fff;
+            padding: .625rem 1.25rem;
+            border-radius: 9999px;
+            font-size: .8125rem;
+            font-weight: 500;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+            opacity: 0;
+            transform: translateY(1rem);
+            transition: opacity .25s, transform .25s;
+            pointer-events: auto;
+            white-space: nowrap;
+            max-width: 90vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .toast-item.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── Revenue Chart ── */
+        #revenue-chart-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 1.25rem;
+        }
+
+        /* ── Layout ── */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .max-w-7xl {
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .items-start {
+            align-items: flex-start;
+        }
+
+        .items-end {
+            align-items: flex-end;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-end {
+            justify-content: flex-end;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .flex-1 {
+            flex: 1 1 0%;
+        }
+
+        .flex-shrink-0 {
+            flex-shrink: 0;
+        }
+
+        .self-center {
+            align-self: center;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        .gap-1 {
+            gap: .25rem
+        }
+
+        .gap-2 {
+            gap: .5rem
+        }
+
+        .gap-3 {
+            gap: .75rem
+        }
+
+        .gap-4 {
+            gap: 1rem
+        }
+
+        .gap-5 {
+            gap: 1.25rem
+        }
+
+        .gap-6 {
+            gap: 1.5rem
+        }
+
+        .gap-8 {
+            gap: 2rem
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        .col-span-2 {
+            grid-column: span 2 / span 2;
+        }
+
+        .space-y-2>*+* {
+            margin-top: .5rem;
+        }
+
+        .space-y-3>*+* {
+            margin-top: .75rem;
+        }
+
+        .space-y-4>*+* {
+            margin-top: 1rem;
+        }
+
+        @media(min-width:640px) {
+            .sm\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .sm\:px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+        }
+
+        @media(min-width:768px) {
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .md\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+
+            .md\:flex {
+                display: flex
+            }
+
+            .md\:hidden {
+                display: none !important
+            }
+
+            .md\:w-\[420px\] {
+                width: 420px
+            }
+        }
+
+        @media(min-width:1024px) {
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+        }
+
+        @media(min-width:1280px) {
+            .xl\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr))
+            }
+        }
+
+        /* ── Spacing ── */
+        .p-2 {
+            padding: .5rem
+        }
+
+        .p-3 {
+            padding: .75rem
+        }
+
+        .p-4 {
+            padding: 1rem
+        }
+
+        .p-5 {
+            padding: 1.25rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .p-8 {
+            padding: 2rem
+        }
+
+        .px-2 {
+            padding-left: .5rem;
+            padding-right: .5rem
+        }
+
+        .px-3 {
+            padding-left: .75rem;
+            padding-right: .75rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .px-5 {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+
+        .py-1 {
+            padding-top: .25rem;
+            padding-bottom: .25rem
+        }
+
+        .py-1\.5 {
+            padding-top: .375rem;
+            padding-bottom: .375rem
+        }
+
+        .py-2 {
+            padding-top: .5rem;
+            padding-bottom: .5rem
+        }
+
+        .py-3 {
+            padding-top: .75rem;
+            padding-bottom: .75rem
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .py-6 {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem
+        }
+
+        .py-10 {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem
+        }
+
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem
+        }
+
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem
+        }
+
+        .py-20 {
+            padding-top: 5rem;
+            padding-bottom: 5rem
+        }
+
+        .pt-3 {
+            padding-top: .75rem
+        }
+
+        .pt-4 {
+            padding-top: 1rem
+        }
+
+        .pb-3 {
+            padding-bottom: .75rem
+        }
+
+        .pl-9 {
+            padding-left: 2.25rem
+        }
+
+        .pl-10 {
+            padding-left: 2.5rem
+        }
+
+        .pr-4 {
+            padding-right: 1rem
+        }
+
+        .mb-1 {
+            margin-bottom: .25rem
+        }
+
+        .mb-2 {
+            margin-bottom: .5rem
+        }
+
+        .mb-3 {
+            margin-bottom: .75rem
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+
+        .mb-5 {
+            margin-bottom: 1.25rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem
+        }
+
+        .mt-1 {
+            margin-top: .25rem
+        }
+
+        .mt-2 {
+            margin-top: .5rem
+        }
+
+        .mt-3 {
+            margin-top: .75rem
+        }
+
+        .mt-4 {
+            margin-top: 1rem
+        }
+
+        .mt-8 {
+            margin-top: 2rem
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mx-8 {
+            margin-left: 2rem;
+            margin-right: 2rem
+        }
+
+        /* ── Sizing ── */
+        .w-4 {
+            width: 1rem
+        }
+
+        .w-5 {
+            width: 1.25rem
+        }
+
+        .w-6 {
+            width: 1.5rem
+        }
+
+        .w-8 {
+            width: 2rem
+        }
+
+        .w-9 {
+            width: 2.25rem
+        }
+
+        .w-14 {
+            width: 3.5rem
+        }
+
+        .w-20 {
+            width: 5rem
+        }
+
+        .w-24 {
+            width: 6rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .h-4 {
+            height: 1rem
+        }
+
+        .h-5 {
+            height: 1.25rem
+        }
+
+        .h-6 {
+            height: 1.5rem
+        }
+
+        .h-8 {
+            height: 2rem
+        }
+
+        .h-9 {
+            height: 2.25rem
+        }
+
+        .h-14 {
+            height: 3.5rem
+        }
+
+        .h-16 {
+            height: 4rem
+        }
+
+        .h-20 {
+            height: 5rem
+        }
+
+        .h-24 {
+            height: 6rem
+        }
+
+        .h-52 {
+            height: 13rem
+        }
+
+        .h-64 {
+            height: 16rem
+        }
+
+        .h-80 {
+            height: 20rem
+        }
+
+        .h-full {
+            height: 100%
+        }
+
+        .min-w-0 {
+            min-width: 0
+        }
+
+        .max-w-sm {
+            max-width: 24rem
+        }
+
+        .max-w-md {
+            max-width: 28rem
+        }
+
+        .max-w-lg {
+            max-width: 32rem
+        }
+
+        .max-w-xl {
+            max-width: 36rem
+        }
+
+        .max-w-2xl {
+            max-width: 42rem
+        }
+
+        .max-h-\[75vh\] {
+            max-height: 75vh
+        }
+
+        .max-h-\[85vh\] {
+            max-height: 85vh
+        }
+
+        .max-h-\[90vh\] {
+            max-height: 90vh
+        }
+
+        /* ── Position ── */
+        .static {
+            position: static
+        }
+
+        .fixed {
+            position: fixed
+        }
+
+        .absolute {
+            position: absolute
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .sticky {
+            position: sticky
+        }
+
+        .inset-0 {
+            inset: 0
+        }
+
+        .top-0 {
+            top: 0
+        }
+
+        .top-2\.5 {
+            top: .625rem
+        }
+
+        .top-3 {
+            top: .75rem
+        }
+
+        .top-4 {
+            top: 1rem
+        }
+
+        .right-0 {
+            right: 0
+        }
+
+        .right-3 {
+            right: .75rem
+        }
+
+        .right-4 {
+            right: 1rem
+        }
+
+        .left-3 {
+            left: .75rem
+        }
+
+        .-top-1 {
+            top: -.25rem
+        }
+
+        .-right-1 {
+            right: -.25rem
+        }
+
+        .z-10 {
+            z-index: 10
+        }
+
+        .z-30 {
+            z-index: 30
+        }
+
+        .z-40 {
+            z-index: 40
+        }
+
+        .z-50 {
+            z-index: 50
+        }
+
+        /* ── Typography ── */
+        .text-xs {
+            font-size: .75rem;
+            line-height: 1rem
+        }
+
+        .text-sm {
+            font-size: .875rem;
+            line-height: 1.25rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem
+        }
+
+        .text-5xl {
+            font-size: 3rem;
+            line-height: 1
+        }
+
+        .text-6xl {
+            font-size: 3.75rem;
+            line-height: 1
+        }
+
+        @media(min-width:768px) {
+            .md\:text-6xl {
+                font-size: 3.75rem;
+                line-height: 1
+            }
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .italic {
+            font-style: italic
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-right {
+            text-align: right
+        }
+
+        .text-left {
+            text-align: left
+        }
+
+        .leading-none {
+            line-height: 1
+        }
+
+        .leading-tight {
+            line-height: 1.25
+        }
+
+        .leading-relaxed {
+            line-height: 1.625
+        }
+
+        .tracking-widest {
+            letter-spacing: .1em
+        }
+
+        .uppercase {
+            text-transform: uppercase
+        }
+
+        .truncate {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .line-clamp-2 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2
+        }
+
+        .underline {
+            text-decoration-line: underline
+        }
+
+        .whitespace-nowrap {
+            white-space: nowrap
+        }
+
+        /* ── Colors ── */
+        .bg-forest-50 {
+            background-color: var(--forest-50)
+        }
+
+        .bg-forest-100 {
+            background-color: var(--forest-100)
+        }
+
+        .bg-forest-500 {
+            background-color: var(--forest-500)
+        }
+
+        .bg-forest-600 {
+            background-color: var(--forest-600)
+        }
+
+        .bg-forest-700 {
+            background-color: var(--forest-700)
+        }
+
+        .bg-forest-800 {
+            background-color: var(--forest-800)
+        }
+
+        .bg-forest-900 {
+            background-color: var(--forest-900)
+        }
+
+        .text-forest-100 {
+            color: var(--forest-100)
+        }
+
+        .text-forest-200 {
+            color: var(--forest-200)
+        }
+
+        .text-forest-300 {
+            color: var(--forest-300)
+        }
+
+        .text-forest-400 {
+            color: #4ade80
+        }
+
+        .text-forest-600 {
+            color: var(--forest-600)
+        }
+
+        .text-forest-700 {
+            color: var(--forest-700)
+        }
+
+        .text-forest-800 {
+            color: var(--forest-800)
+        }
+
+        .text-forest-900 {
+            color: var(--forest-900)
+        }
+
+        .border-forest-600 {
+            border-color: var(--forest-600)
+        }
+
+        .border-forest-700 {
+            border-color: var(--forest-700)
+        }
+
+        .bg-earth-500 {
+            background-color: var(--earth-500)
+        }
+
+        .bg-earth-600 {
+            background-color: var(--earth-600)
+        }
+
+        .text-earth-500 {
+            color: var(--earth-500)
+        }
+
+        .bg-sage-50 {
+            background-color: var(--sage-50)
+        }
+
+        .bg-sage-100 {
+            background-color: var(--sage-100)
+        }
+
+        .bg-sage-200 {
+            background-color: var(--sage-200)
+        }
+
+        .bg-sage-300 {
+            background-color: #b2c6a0
+        }
+
+        .text-sage-400 {
+            color: var(--sage-400)
+        }
+
+        .text-sage-500 {
+            color: var(--sage-500)
+        }
+
+        .text-sage-600 {
+            color: var(--sage-600)
+        }
+
+        .text-sage-700 {
+            color: var(--sage-700)
+        }
+
+        .border-sage-100 {
+            border-color: var(--sage-100)
+        }
+
+        .border-sage-200 {
+            border-color: var(--sage-200)
+        }
+
+        .bg-white {
+            background-color: #fff
+        }
+
+        .bg-white\/90 {
+            background-color: rgba(255, 255, 255, .9)
+        }
+
+        .bg-black\/50 {
+            background-color: rgba(0, 0, 0, .5)
+        }
+
+        .text-white {
+            color: #fff
+        }
+
+        .text-red-400 {
+            color: #f87171
+        }
+
+        .text-red-500 {
+            color: #ef4444
+        }
+
+        .text-red-600 {
+            color: #dc2626
+        }
+
+        .bg-red-50 {
+            background-color: #fef2f2
+        }
+
+        .text-red-700 {
+            color: #b91c1c
+        }
+
+        .text-yellow-700 {
+            color: #a16207
+        }
+
+        .bg-yellow-100 {
+            background-color: #fef9c3
+        }
+
+        .text-blue-700 {
+            color: #1d4ed8
+        }
+
+        .bg-blue-100 {
+            background-color: #dbeafe
+        }
+
+        .text-purple-700 {
+            color: #7e22ce
+        }
+
+        .bg-purple-100 {
+            background-color: #f3e8ff
+        }
+
+        .text-green-700 {
+            color: #15803d
+        }
+
+        .bg-green-100 {
+            background-color: #dcfce7
+        }
+
+        .text-gray-500 {
+            color: #6b7280
+        }
+
+        .text-gray-600 {
+            color: #4b5563
+        }
+
+        .text-gray-700 {
+            color: #374151
+        }
+
+        .bg-gray-50 {
+            background-color: #f9fafb
+        }
+
+        .bg-gray-100 {
+            background-color: #f3f4f6
+        }
+
+        .border-transparent {
+            border-color: transparent
+        }
+
+        /* ── Borders ── */
+        .border {
+            border-width: 1px
+        }
+
+        .border-b {
+            border-bottom-width: 1px
+        }
+
+        .border-t {
+            border-top-width: 1px
+        }
+
+        .border-b-2 {
+            border-bottom-width: 2px
+        }
+
+        .rounded {
+            border-radius: .25rem
+        }
+
+        .rounded-lg {
+            border-radius: .5rem
+        }
+
+        .rounded-xl {
+            border-radius: .75rem
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem
+        }
+
+        .rounded-3xl {
+            border-radius: 1.5rem
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        /* ── Shadows ── */
+        .shadow {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1)
+        }
+
+        .shadow-sm {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05)
+        }
+
+        .shadow-2xl {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25)
+        }
+
+        .backdrop-blur-sm {
+            backdrop-filter: blur(4px)
+        }
+
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px)
+        }
+
+        /* ── Misc ── */
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .overflow-y-auto {
+            overflow-y: auto
+        }
+
+        .overflow-x-auto {
+            overflow-x: auto
+        }
+
+        .object-cover {
+            object-fit: cover
+        }
+
+        .cursor-pointer {
+            cursor: pointer
+        }
+
+        .cursor-not-allowed {
+            cursor: not-allowed
+        }
+
+        .select-none {
+            user-select: none
+        }
+
+        .pointer-events-none {
+            pointer-events: none
+        }
+
+        .accent-forest-600 {
+            accent-color: var(--forest-600)
+        }
+
+        .opacity-10 {
+            opacity: .1
+        }
+
+        .transition {
+            transition: color, background-color, border-color, opacity, box-shadow, transform 150ms cubic-bezier(.4, 0, .2, 1)
+        }
+
+        :disabled,
+        .disabled\:bg-sage-300:disabled {
+            background-color: #b2c6a0
+        }
+
+        .disabled\:cursor-not-allowed:disabled {
+            cursor: not-allowed
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0
+        }
+
+        /* ── Hover ── */
+        .hover\:bg-forest-50:hover {
+            background-color: var(--forest-50)
+        }
+
+        .hover\:bg-forest-600:hover {
+            background-color: var(--forest-600)
+        }
+
+        .hover\:bg-forest-700:hover {
+            background-color: var(--forest-700)
+        }
+
+        .hover\:bg-earth-600:hover {
+            background-color: var(--earth-600)
+        }
+
+        .hover\:bg-sage-50:hover {
+            background-color: var(--sage-50)
+        }
+
+        .hover\:bg-sage-100:hover {
+            background-color: var(--sage-100)
+        }
+
+        .hover\:bg-red-50:hover {
+            background-color: #fef2f2
+        }
+
+        .hover\:bg-white:hover {
+            background-color: #fff
+        }
+
+        .hover\:text-forest-600:hover {
+            color: var(--forest-600)
+        }
+
+        .hover\:text-forest-700:hover {
+            color: var(--forest-700)
+        }
+
+        .hover\:text-forest-900:hover {
+            color: var(--forest-900)
+        }
+
+        .hover\:text-sage-700:hover {
+            color: var(--sage-700)
+        }
+
+        .hover\:text-red-600:hover {
+            color: #dc2626
+        }
+
+        .hover\:text-red-700:hover {
+            color: #b91c1c
+        }
+
+        .hover\:text-white:hover {
+            color: #fff
+        }
+
+        .hover\:underline:hover {
+            text-decoration-line: underline
+        }
+
+        /* ═══ CUSTOM STYLES ═══════════════════════════════════════════════════════ */
+        .modal-overlay {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s .25s, opacity .25s ease;
+        }
+
+        .modal-overlay.active {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity .25s ease;
+        }
+
+        .modal-box {
+            transform: translateY(20px) scale(.97);
+            transition: transform .25s ease;
+        }
+
+        .modal-overlay.active .modal-box {
+            transform: translateY(0) scale(1);
+        }
+
+        .cart-drawer {
+            transform: translateX(100%);
+            transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .cart-drawer.open {
+            transform: translateX(0);
+        }
+
+        .filter-pill {
+            background: #fff;
+            color: var(--sage-600);
+            transition: all .15s;
+        }
+
+        .filter-pill.active {
+            background: var(--forest-600);
+            color: #fff;
+            border-color: var(--forest-600);
+        }
+
+        .filter-pill:hover:not(.active) {
+            background: var(--forest-50);
+            border-color: var(--forest-300);
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+            transition: transform .2s ease, box-shadow .2s ease;
+            border: 1px solid var(--sage-100);
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+        }
+
+        .skeleton {
+            background: linear-gradient(90deg, #e2e8e0 25%, #eff3ed 50%, #e2e8e0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.4s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% 0
+            }
+
+            100% {
+                background-position: -200% 0
+            }
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.5)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0)
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp .5s ease forwards;
+        }
+
+        .cart-badge.pulse {
+            animation: pop .3s ease;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #14532d 0%, #166534 40%, #15803d 70%, #22c55e 100%);
+        }
+
+        .tag-chip {
+            background: rgba(22, 163, 74, .1);
+            color: var(--forest-600);
+            font-size: .7rem;
+            padding: 2px 8px;
+            border-radius: 100px;
+            font-weight: 500;
+        }
+
+        .diff-easy {
+            background: #dcfce7;
+            color: #16a34a
+        }
+
+        .diff-moderate {
+            background: #fef9c3;
+            color: #a16207
+        }
+
+        .diff-hard {
+            background: #fee2e2;
+            color: #dc2626
+        }
+
+        .qty-btn {
+            transition: background .15s;
+        }
+
+        .qty-btn:hover {
+            background: #16a34a;
+            color: white;
+        }
+
+        .star-display {
+            color: #fbbf24
+        }
+
+        .star-empty {
+            color: #d1d5db
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f2
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #86efac;
+            border-radius: 10px
+        }
+
+        /* toast styles moved to .toast-item */
+
+        .stat-card {
+            background: #fff;
+            border-radius: .75rem;
+            padding: 1.25rem;
+            border: 1px solid var(--sage-100);
+        }
+
+        .order-timeline {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .order-timeline::before {
+            content: '';
+            position: absolute;
+            left: .375rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--sage-200);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            width: .75rem;
+            height: .75rem;
+            border-radius: 50%;
+            background: var(--forest-600);
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px var(--forest-600);
+        }
+
+        .promo-input {
+            display: flex;
+            gap: .5rem;
+        }
+
+        .promo-success {
+            background: #dcfce7;
+            color: #16a34a;
+            padding: .5rem .75rem;
+            border-radius: .5rem;
+            font-size: .85rem;
+        }
+
+        .promo-error {
+            background: #fee2e2;
+            color: #dc2626;
+            padding: .5rem .75rem;
+            border-radius: .5rem;
+            font-size: .85rem;
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: .75rem;
+            left: .75rem;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #fff;
+            font-size: .65rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 100px;
+            letter-spacing: .05em;
+        }
+
+        .stock-badge-low {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        .in-stock-badge {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+
+        .variant-btn {
+            border: 1.5px solid var(--sage-200);
+            border-radius: .5rem;
+            padding: .35rem .75rem;
+            font-size: .8rem;
+            cursor: pointer;
+            transition: all .15s;
+        }
+
+        .variant-btn.active {
+            border-color: var(--forest-600);
+            background: var(--forest-50);
+            color: var(--forest-700);
+            font-weight: 500;
+        }
+
+        .variant-btn:hover:not(.active) {
+            border-color: var(--sage-400);
+        }
+
+        .admin-tab-active {
+            border-bottom: 2px solid var(--forest-600);
+            color: var(--forest-700);
+            font-weight: 600;
+        }
+
+        .price-range-wrap {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .price-range-wrap input[type=number] {
+            width: 5rem;
+            text-align: center;
+            border: 1px solid var(--sage-200);
+            border-radius: .5rem;
+            padding: .25rem .5rem;
+            font-size: .8rem;
+        }
+
+        .navbar-scrolled {
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+        }
+
+        .load-more-btn {
+            display: block;
+            margin: 2rem auto;
+            padding: .75rem 2rem;
+            background: var(--forest-600);
+            color: #fff;
+            border-radius: 999px;
+            font-weight: 500;
+            transition: background .15s;
+        }
+
+        .load-more-btn:hover {
+            background: var(--forest-700);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Toast Container (queue-based) -->
+    <div id="toast-container"></div>
+
+    <!-- ═══ AI PLANT ADVISOR CHATBOT ════════════════════════════════════════ -->
+    <div id="chat-bubble" class="chat-bubble">
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div style="display:flex;align-items:center;gap:.625rem">
+                    <div
+                        style="width:2rem;height:2rem;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1rem">
+                        🌿</div>
+                    <div>
+                        <div style="font-weight:600;font-size:.875rem">Sage — Plant Advisor</div>
+                        <div style="font-size:.7rem;opacity:.8">AI-powered care expert</div>
+                    </div>
+                </div>
+                <button onclick="toggleChat()"
+                    style="background:none;border:none;color:#fff;font-size:1.25rem;cursor:pointer;padding:.25rem">✕</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="chat-msg bot">Hi! I'm Sage, your plant care expert 🌿 Ask me anything about plant care,
+                    choosing plants, or troubleshooting!</div>
+            </div>
+            <div class="chat-input-row">
+                <input id="chat-input" type="text" placeholder="Ask about plant care…"
+                    onkeydown="if(event.key==='Enter')sendChat()" maxlength="500" />
+                <button onclick="sendChat()">Send</button>
+            </div>
+        </div>
+        <button class="chat-btn" onclick="toggleChat()" title="Ask our plant advisor">🌿</button>
+    </div>
+
+    <!-- ═══ OVERLAY ═══════════════════════════════════════════════════════════ -->
+    <div id="overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden" onclick="closeAllModals()"></div>
+
+    <!-- ═══ NAVBAR ════════════════════════════════════════════════════════════ -->
+    <header id="navbar" class="bg-white/90 backdrop-blur-md sticky top-0 z-30 border-b border-sage-100 transition">
+        <div class="max-w-7xl" style="padding:0 1rem">
+            <div class="flex items-center justify-between" style="height:4rem">
+                <div class="flex items-center gap-2 cursor-pointer" onclick="scrollToTop()">
+                    <div style="width:2.25rem;height:2.25rem">
+                        <img src="favicon.png" alt="EcoGrow Logo" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-display text-xl font-bold text-forest-800"
+                        style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">EcoGrow</span>
+                </div>
+                <div class="hidden md:flex flex-1 max-w-md mx-8">
+                    <div class="relative w-full">
+                        <input id="search-input" type="text" placeholder="Search plants…"
+                            class="w-full pl-10 pr-4 py-2 text-sm bg-sage-50 border border-sage-200 rounded-xl transition"
+                            oninput="debounceSearch(this.value)" />
+                        <svg class="absolute"
+                            style="left:.75rem;top:.625rem;width:1rem;height:1rem;color:var(--sage-400)" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div id="auth-info" class="hidden md:flex items-center gap-1 text-sm text-sage-600 font-medium">
+                        <svg style="width:1rem;height:1rem" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span id="welcome-msg">Guest</span>
+                    </div>
+                    <button id="btn-login" onclick="openModal('login-modal')"
+                        class="text-sm font-medium text-forest-700 hover:text-forest-900 px-3 py-1\.5 rounded-lg hover:bg-forest-50 transition">Login</button>
+                    <button id="btn-register" onclick="openModal('register-modal')"
+                        class="text-sm font-medium bg-forest-600 text-white px-3 rounded-lg hover:bg-forest-700 transition shadow-sm"
+                        style="padding:.375rem .75rem">Register</button>
+                    <button id="btn-logout" onclick="logout()"
+                        class="hidden text-sm font-medium text-red-500 hover:text-red-700 px-3 py-1\.5 rounded-lg hover:bg-red-50 transition">Logout</button>
+                    <button id="btn-orders" onclick="openModal('orders-modal')"
+                        class="hidden text-sm font-medium text-forest-700 hover:text-forest-900 px-3 rounded-lg hover:bg-forest-50 transition"
+                        style="padding:.375rem .75rem">Orders</button>
+                    <button id="btn-profile" onclick="openModal('profile-modal')"
+                        class="hidden p-2 text-sage-600 hover:text-forest-700 rounded-xl hover:bg-sage-50 transition"
+                        title="My Profile">
+                        <svg style="width:1.25rem;height:1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </button>
+                    <button id="btn-wishlist" onclick="openWishlist()"
+                        class="hidden p-2 text-red-400 hover:text-red-600 rounded-xl hover:bg-red-50 transition"
+                        title="Wishlist">
+                        <svg style="width:1.25rem;height:1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button id="btn-admin" onclick="openModal('admin-modal')"
+                        class="hidden text-sm font-medium bg-earth-500 text-white px-3 rounded-lg hover:bg-earth-600 transition shadow-sm"
+                        style="padding:.375rem .75rem">⚙ Admin</button>
+                    <button onclick="toggleDarkMode()" id="dark-toggle"
+                        class="p-2 text-sage-600 hover:text-forest-700 rounded-xl hover:bg-sage-50 transition"
+                        title="Toggle dark mode">
+                        <svg style="width:1.25rem;height:1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <button onclick="toggleCart()"
+                        class="relative p-2 text-sage-600 hover:text-forest-700 rounded-xl hover:bg-sage-50 transition">
+                        <svg style="width:1.5rem;height:1.5rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <span id="cart-badge" class="cart-badge absolute"
+                            style="top:-.25rem;right:-.25rem;width:1.25rem;height:1.25rem;background:var(--forest-500);color:#fff;font-size:.65rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;font-weight:700">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ HERO ══════════════════════════════════════════════════════════════ -->
+    <section class="hero-gradient text-white py-16 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2220%22 cy=%2220%22 r=%2215%22 fill=%22white%22 opacity=%220.3%22/><circle cx=%2280%22 cy=%2280%22 r=%2220%22 fill=%22white%22 opacity=%220.2%22/></svg>')">
+        </div>
+        <div class="max-w-7xl mx-auto text-center relative">
+            <p class="text-forest-200 text-sm font-medium tracking-widest uppercase mb-3">🌿 Curated Plant Shop</p>
+            <h1 class="font-display text-4xl font-bold mb-4 leading-tight" style="font-size:clamp(2rem,5vw,3.75rem)">
+                Bring Nature<br /><em>Indoors</em></h1>
+            <p class="text-forest-100 text-lg mb-8" style="max-width:36rem;margin:0 auto 2rem">Handpicked indoor plants
+                with expert care guides — delivered to your door.</p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-forest-200">
+                <span>🌱 <strong class="text-white" id="hero-count">12</strong> Plants</span>
+                <span>🚚 Free shipping over ₹500</span>
+                <span>🐾 Pet-Safe Options</span>
+                <span>💚 Expert Care Tips</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 mt-6 text-xs">
+                <span style="background:rgba(255,255,255,.15);padding:.35rem .9rem;border-radius:999px">🎁 Use
+                    <strong>WELCOME10</strong> for 10% off</span>
+                <span style="background:rgba(255,255,255,.15);padding:.35rem .9rem;border-radius:999px">🎁 Use
+                    <strong>FLAT100</strong> for ₹100 off on ₹500+</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ MAIN ═══════════════════════════════════════════════════════════════ -->
+    <main class="max-w-7xl" style="padding:2.5rem 1rem">
+
+        <!-- Filters Bar -->
+        <div class="bg-white rounded-2xl shadow-sm border border-sage-100 p-5 mb-8">
+            <div class="flex flex-wrap items-center gap-4">
+                <!-- Mobile search -->
+                <div class="w-full md:hidden relative">
+                    <input id="search-mobile" type="text" placeholder="Search plants…"
+                        class="w-full pl-9 pr-4 py-2 text-sm bg-sage-50 border border-sage-200 rounded-xl"
+                        oninput="debounceSearch(this.value)" />
+                    <svg class="absolute" style="left:.75rem;top:.625rem;width:1rem;height:1rem;color:var(--sage-400)"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+
+                <span class="text-sm font-semibold text-sage-700">Filter:</span>
+
+                <div class="flex flex-wrap items-center gap-4 w-full">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-sage-400">☀ Light:</span>
+                        <select onchange="setFilter('light', this.value)"
+                            class="text-sm border border-sage-200 bg-sage-50 rounded-xl px-3 py-1.5 font-medium text-sage-700 outline-none focus:border-forest-500">
+                            <option value="All">All</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Bright Indirect">Bright Indirect</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-sage-400">🌿 Care:</span>
+                        <select onchange="setFilter('care', this.value)"
+                            class="text-sm border border-sage-200 bg-sage-50 rounded-xl px-3 py-1.5 font-medium text-sage-700 outline-none focus:border-forest-500">
+                            <option value="All">All</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Moderate">Moderate</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-sage-400">🏷 Category:</span>
+                        <select id="category-filters" onchange="setFilter('category', this.value)"
+                            class="text-sm border border-sage-200 bg-sage-50 rounded-xl px-3 py-1.5 font-medium text-sage-700 outline-none focus:border-forest-500">
+                            <option value="All">All</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Advanced filters row -->
+                <div class="flex flex-wrap items-center gap-4 w-full border-t border-sage-100 pt-3 mt-4">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" id="pet-safe-filter" class="w-4 h-4 accent-forest-600"
+                            onchange="fetchProducts()" />
+                        <span class="text-sm text-sage-600">🐾 Pet Safe</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" id="in-stock-filter" class="w-4 h-4 accent-forest-600"
+                            onchange="fetchProducts()" />
+                        <span class="text-sm text-sage-600">✅ In Stock Only</span>
+                    </label>
+                    <!-- Price range -->
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="text-sage-400 text-xs">₹ Price:</span>
+                        <input type="number" id="min-price" placeholder="Min"
+                            class="w-20 text-center border border-sage-200 rounded-lg text-sm"
+                            style="padding:.25rem .5rem" oninput="debounceSearch(searchQ)" />
+                        <span class="text-sage-400">–</span>
+                        <input type="number" id="max-price" placeholder="Max"
+                            class="w-20 text-center border border-sage-200 rounded-lg text-sm"
+                            style="padding:.25rem .5rem" oninput="debounceSearch(searchQ)" />
+                    </div>
+                    <div class="ml-auto flex items-center gap-2">
+                        <label class="text-xs text-sage-400">Sort:</label>
+                        <select id="sort-select" onchange="fetchProducts()"
+                            class="text-sm border border-sage-200 bg-sage-50 rounded-xl px-3 font-medium text-sage-700"
+                            style="padding:.375rem .75rem">
+                            <option value="">Latest</option>
+                            <option value="price_asc">Price ↑</option>
+                            <option value="price_desc">Price ↓</option>
+                            <option value="rating">Top Rated</option>
+                            <option value="popular">Most Popular</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results bar -->
+        <div class="flex items-center justify-between mb-5">
+            <p id="result-count" class="text-sm text-sage-500 font-medium"></p>
+            <div class="flex gap-2">
+                <button onclick="setView('grid')" id="view-grid" class="p-1\.5 rounded-lg bg-forest-600 text-white">
+                    <svg style="width:1rem;height:1rem" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                </button>
+                <button onclick="setView('list')" id="view-list"
+                    class="p-1\.5 rounded-lg text-sage-500 hover:bg-sage-100">
+                    <svg style="width:1rem;height:1rem" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+        <div id="empty-state" class="hidden text-center py-20">
+            <p class="text-6xl mb-4">🌵</p>
+            <p class="text-xl font-display font-semibold text-sage-600 mb-2">No plants found</p>
+            <p class="text-sage-400 text-sm">Try adjusting your filters or search</p>
+            <button onclick="clearFilters()" class="mt-4 text-sm text-forest-600 underline hover:text-forest-800">Clear
+                all filters</button>
+        </div>
+        <button id="load-more-btn" class="load-more-btn hidden" onclick="loadMore()">Load more plants</button>
+    </main>
+
+    <!-- ═══ FOOTER ═════════════════════════════════════════════════════════════ -->
+    <footer class="bg-forest-900 text-forest-200 py-12 mt-16">
+        <div class="max-w-7xl" style="padding:0 1rem">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="bg-forest-600 rounded-lg flex items-center justify-center"
+                            style="width:2rem;height:2rem">
+                            <svg style="width:1rem;height:1rem;color:#fff" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2C7 2 4 5 4 8c0 3 2 5 4 6v2H8v2h4v-2h-1v-2c2-1 5-3 5-6 0-3-3-6-6-6z" />
+                            </svg>
+                        </div>
+                        <span class="font-display text-lg font-bold text-white">EcoGrow</span>
+                    </div>
+                    <p class="text-sm leading-relaxed text-forest-300">Bringing nature indoors with handpicked plants
+                        and expert care guides.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Shop</a></li>
+                        <li><a href="#" onclick="openModal('login-modal')" class="hover:text-white transition">My
+                                Account</a></li>
+                        <li><a href="#" onclick="openModal('orders-modal')" class="hover:text-white transition">My
+                                Orders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Help</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><span>📦 Free shipping over ₹500</span></li>
+                        <li><span>🌱 7-day plant guarantee</span></li>
+                        <li><span>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="45363035352a37310520262a22372a326b262a28">[email&#160;protected]</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-forest-800 mt-8 pt-6 text-center text-sm text-forest-400">
+                <p>© 2024 EcoGrow. Made with 💚 for plant lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     MODALS
+═══════════════════════════════════════════════════════════════════════ -->
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-md p-8">
+            <div class="text-center mb-6">
+                <div class="mx-auto mb-3 bg-forest-100 rounded-full flex items-center justify-center"
+                    style="width:3.5rem;height:3.5rem">
+                    <svg style="width:1.5rem;height:1.5rem;color:var(--forest-700)" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-2xl font-bold text-forest-900">Welcome back</h2>
+                <p class="text-sage-500 text-sm mt-1">Sign in to your EcoGrow account</p>
+            </div>
+            <div class="space-y-4">
+                <input id="login-id" type="text" placeholder="Username or email"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <input id="login-pw" type="password" placeholder="Password"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500"
+                    onkeydown="if(event.key==='Enter')handleLogin()" />
+                <p id="login-err" class="hidden text-sm text-red-500 text-center"></p>
+                <button onclick="handleLogin()"
+                    class="w-full bg-forest-600 text-white py-3 rounded-xl font-semibold hover:bg-forest-700 transition text-sm">Sign
+                    In</button>
+                <p class="text-center text-sm text-sage-500">Don't have an account? <button
+                        onclick="closeModal('login-modal');openModal('register-modal')"
+                        class="text-forest-600 font-medium hover:underline">Register</button></p>
+            </div>
+            <button onclick="closeModal('login-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-md p-8">
+            <div class="text-center mb-6">
+                <div class="mx-auto mb-3 bg-forest-100 rounded-full flex items-center justify-center"
+                    style="width:3.5rem;height:3.5rem">
+                    <svg style="width:1.5rem;height:1.5rem;color:var(--forest-700)" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-2xl font-bold text-forest-900">Create account</h2>
+                <p class="text-sage-500 text-sm mt-1">Join the EcoGrow community</p>
+            </div>
+            <div class="space-y-4">
+                <input id="reg-user" type="text" placeholder="Username (min 3 chars, alphanumeric)"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <input id="reg-email" type="email" placeholder="Email address"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <input id="reg-pw" type="password" placeholder="Password (min 6 chars)"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500"
+                    onkeydown="if(event.key==='Enter')handleRegister()" />
+                <p id="reg-err" class="hidden text-sm text-red-500 text-center"></p>
+                <button onclick="handleRegister()"
+                    class="w-full bg-forest-600 text-white py-3 rounded-xl font-semibold hover:bg-forest-700 transition text-sm">Create
+                    Account</button>
+                <p class="text-center text-sm text-sage-500">Already have an account? <button
+                        onclick="closeModal('register-modal');openModal('login-modal')"
+                        class="text-forest-600 font-medium hover:underline">Sign in</button></p>
+            </div>
+            <button onclick="closeModal('register-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-y-auto" style="max-height:90vh">
+            <div id="product-modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer fixed top-0 right-0 h-full z-50 bg-white shadow-2xl flex flex-col"
+        style="width:min(100vw,420px)">
+        <div class="flex items-center justify-between p-5 border-b border-sage-100">
+            <h2 class="font-display text-lg font-bold text-forest-900">🛒 Your Cart</h2>
+            <button onclick="toggleCart()" class="text-sage-400 hover:text-sage-700 text-xl">✕</button>
+        </div>
+        <div id="cart-items" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+        <!-- Promo code -->
+        <div class="px-5 pb-2">
+            <div class="flex gap-2">
+                <input id="promo-input" type="text" placeholder="Promo code"
+                    class="flex-1 px-3 py-2 border border-sage-200 rounded-lg text-sm uppercase focus:outline-none focus:border-forest-500"
+                    style="letter-spacing:.05em" />
+                <button onclick="applyPromo()"
+                    class="bg-forest-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-forest-700 transition">Apply</button>
+            </div>
+            <div id="promo-msg" class="mt-2 text-sm hidden"></div>
+        </div>
+        <div class="p-5 border-t border-sage-100 space-y-3">
+            <div class="flex justify-between text-sm text-sage-600"><span>Subtotal</span><span
+                    id="cart-subtotal">₹0.00</span></div>
+            <div id="discount-row" class="hidden flex justify-between text-sm text-green-700 font-medium"><span>Discount
+                    (<span id="discount-code"></span>)</span><span id="cart-discount">-₹0.00</span></div>
+            <div id="shipping-row" class="flex justify-between text-sm text-sage-600"><span>Shipping</span><span
+                    id="cart-shipping">₹49.00</span></div>
+            <div class="flex justify-between font-bold text-forest-900 text-lg"><span>Total</span><span
+                    id="cart-total">₹0.00</span></div>
+            <button onclick="openCheckout()"
+                class="w-full bg-forest-600 text-white py-3 rounded-xl font-semibold hover:bg-forest-700 transition text-sm">Proceed
+                to Checkout</button>
+            <p class="text-center text-xs text-sage-400">Free shipping on orders over ₹500</p>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-y-auto p-8"
+            style="max-height:90vh">
+            <h2 class="font-display text-2xl font-bold text-forest-900 mb-6">Shipping Details</h2>
+            <div class="space-y-4">
+                <input id="ship-name" type="text" placeholder="Full name"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <input id="ship-address" type="text" placeholder="Street address"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <div class="flex gap-3">
+                    <input id="ship-city" type="text" placeholder="City"
+                        class="flex-1 px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                    <input id="ship-state" type="text" placeholder="State"
+                        class="flex-1 px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                </div>
+                <input id="ship-zip" type="text" placeholder="PIN code"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <div>
+                    <label class="text-sm text-sage-600 font-medium block mb-2">Payment Method</label>
+                    <div class="flex gap-3">
+                        <label
+                            class="flex items-center gap-2 cursor-pointer flex-1 border border-sage-200 rounded-xl p-3">
+                            <input type="radio" name="payment" value="COD" checked class="accent-forest-600" />
+                            <span class="text-sm font-medium">Cash on Delivery</span>
+                        </label>
+                        <label
+                            class="flex items-center gap-2 cursor-pointer flex-1 border border-sage-200 rounded-xl p-3">
+                            <input type="radio" name="payment" value="Online" class="accent-forest-600" />
+                            <span class="text-sm font-medium">Online Payment</span>
+                        </label>
+                    </div>
+                </div>
+                <textarea id="ship-notes" placeholder="Order notes (optional)"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500"
+                    rows="2"></textarea>
+                <div class="bg-sage-50 rounded-xl p-4 text-sm space-y-1">
+                    <div class="flex justify-between text-sage-600"><span>Subtotal</span><span
+                            id="co-subtotal">₹0.00</span></div>
+                    <div id="co-discount-row" class="hidden flex justify-between text-green-700 font-medium">
+                        <span>Discount</span><span id="co-discount">-₹0.00</span>
+                    </div>
+                    <div class="flex justify-between text-sage-600"><span>Shipping</span><span
+                            id="co-shipping">₹49.00</span></div>
+                    <div class="flex justify-between font-bold text-forest-900 pt-2 border-t border-sage-200">
+                        <span>Total</span><span id="co-total">₹0.00</span>
+                    </div>
+                </div>
+                <p id="checkout-err" class="hidden text-sm text-red-500 text-center"></p>
+                <button onclick="placeOrder()"
+                    class="w-full bg-forest-600 text-white py-3 rounded-xl font-semibold hover:bg-forest-700 transition text-sm"
+                    id="place-order-btn">Place Order</button>
+            </div>
+            <button onclick="closeModal('checkout-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- Orders Modal -->
+    <div id="orders-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-y-auto p-8"
+            style="max-height:90vh">
+            <h2 class="font-display text-2xl font-bold text-forest-900 mb-6">My Orders</h2>
+            <div id="orders-list" class="space-y-4"></div>
+            <button onclick="closeModal('orders-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- Order Detail Modal -->
+    <div id="order-detail-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-y-auto p-8"
+            style="max-height:90vh">
+            <div id="order-detail-body"></div>
+            <button onclick="closeModal('order-detail-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlist-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-md p-8">
+            <h2 class="font-display text-2xl font-bold text-forest-900 mb-5">My Wishlist ❤</h2>
+            <div id="wishlist-content" class="space-y-3 overflow-y-auto" style="max-height:60vh"></div>
+            <button onclick="closeModal('wishlist-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profile-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-md p-8 overflow-y-auto"
+            style="max-height:90vh">
+            <h2 class="font-display text-2xl font-bold text-forest-900 mb-6">My Profile</h2>
+            <div class="space-y-4">
+                <input id="prof-username" type="text" placeholder="Username"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <input id="prof-email" type="email" placeholder="Email"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <input id="prof-pw" type="password" placeholder="New password (leave blank to keep current)"
+                    class="w-full px-4 py-3 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                <p id="prof-msg" class="hidden text-sm text-center"></p>
+                <button onclick="saveProfile()"
+                    class="w-full bg-forest-600 text-white py-3 rounded-xl font-semibold hover:bg-forest-700 transition text-sm">Save
+                    Changes</button>
+            </div>
+            <button onclick="closeModal('profile-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- Admin Modal -->
+    <div id="admin-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div class="modal-box bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-y-auto" style="max-height:90vh">
+            <div class="p-6">
+                <h2 class="font-display text-2xl font-bold text-forest-900 mb-4">Admin Panel</h2>
+                <!-- Tabs -->
+                <div class="flex gap-6 border-b border-sage-200 mb-6 text-sm font-medium">
+                    <button id="tab-analytics" class="pb-2 admin-tab-active text-forest-700 cursor-pointer"
+                        onclick="adminTab('analytics')">📊 Analytics</button>
+                    <button id="tab-orders" class="pb-2 border-b-2 border-transparent text-sage-500 cursor-pointer"
+                        onclick="adminTab('orders')">📦 Orders</button>
+                    <button id="tab-add" class="pb-2 border-b-2 border-transparent text-sage-500 cursor-pointer"
+                        onclick="adminTab('add')">➕ Add Product</button>
+                    <button id="tab-products" class="pb-2 border-b-2 border-transparent text-sage-500 cursor-pointer"
+                        onclick="adminTab('products')">🌿 Products</button>
+                    <button id="tab-promos" class="pb-2 border-b-2 border-transparent text-sage-500 cursor-pointer"
+                        onclick="adminTab('promos')">🎁 Promos</button>
+                </div>
+
+                <!-- Analytics Tab -->
+                <div id="admin-analytics">
+                    <div id="analytics-content">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4" id="analytics-stats"></div>
+                        <div id="revenue-chart-container"><canvas id="revenue-chart"></canvas></div>
+                        <h3 class="font-semibold text-forest-900 mb-3 text-sm">Top Products</h3>
+                        <div id="analytics-top" class="space-y-2 mb-6"></div>
+                        <h3 class="font-semibold text-forest-900 mb-3 text-sm">⚠ Low Stock</h3>
+                        <div id="analytics-lowstock" class="space-y-2"></div>
+                    </div>
+                </div>
+
+                <!-- Orders Tab -->
+                <div id="admin-orders" class="hidden">
+                    <div class="flex gap-2 mb-4 flex-wrap">
+                        <select id="order-status-filter"
+                            class="text-sm border border-sage-200 rounded-lg px-3 py-2 text-sage-700"
+                            onchange="loadAdminOrders()">
+                            <option value="All">All Statuses</option>
+                            <option>Pending</option>
+                            <option>Processing</option>
+                            <option>Shipped</option>
+                            <option>Delivered</option>
+                            <option>Cancelled</option>
+                        </select>
+                        <button onclick="exportOrdersCSV()"
+                            class="text-sm bg-forest-100 text-forest-700 px-3 py-2 rounded-lg hover:bg-forest-200 transition font-medium">⬇
+                            Export CSV</button>
+                    </div>
+                    <div id="admin-orders-list" class="space-y-3 overflow-y-auto" style="max-height:55vh"></div>
+                </div>
+
+                <!-- Add Product Tab -->
+                <div id="admin-add" class="hidden">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input id="ap-name" type="text" placeholder="Plant name *"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                        <input id="ap-price" type="number" placeholder="Price (₹) *"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm focus:outline-none focus:border-forest-500" />
+                        <textarea id="ap-desc" placeholder="Description"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm col-span-2 focus:outline-none focus:border-forest-500"
+                            rows="2"></textarea>
+                        <input id="ap-image" type="text" placeholder="Image URL"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm col-span-2 focus:outline-none focus:border-forest-500" />
+                        <select id="ap-light"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm text-sage-700 focus:outline-none">
+                            <option>Low</option>
+                            <option selected>Medium</option>
+                            <option>High</option>
+                            <option>Bright Indirect</option>
+                        </select>
+                        <select id="ap-care"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm text-sage-700 focus:outline-none">
+                            <option selected>Easy</option>
+                            <option>Moderate</option>
+                            <option>Hard</option>
+                        </select>
+                        <input id="ap-category" type="text" placeholder="Category (e.g. Indoor)" value="Indoor"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm focus:outline-none" />
+                        <input id="ap-stock" type="number" placeholder="Stock quantity"
+                            class="w-full px-4 py-2.5 border border-sage-200 rounded-xl text-sm focus:outline-none" />
+                        <label class="flex items-center gap-2 cursor-pointer col-span-2">
+                            <input type="checkbox" id="ap-petsafe" class="w-4 h-4 accent-forest-600" />
+                            <span class="text-sm text-sage-600">Pet Safe</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer col-span-2">
+                            <input type="checkbox" id="ap-featured" class="w-4 h-4 accent-forest-600" />
+                            <span class="text-sm text-sage-600">Mark as Featured</span>
+                        </label>
+                    </div>
+                    <p id="ap-err" class="hidden text-sm text-red-500 mt-3"></p>
+                    <button onclick="handleAddProduct()"
+                        class="mt-4 w-full bg-forest-600 text-white py-3 rounded-xl font-semibold hover:bg-forest-700 transition text-sm">Add
+                        Plant</button>
+                </div>
+
+                <!-- Products Management Tab -->
+                <div id="admin-products" class="hidden">
+                    <div class="mb-3 text-xs text-sage-400">Manage existing products. Add new ones from the ➕ Add tab.
+                    </div>
+                    <div id="admin-products-list" class="space-y-2 overflow-y-auto" style="max-height:55vh"></div>
+                </div>
+
+                <!-- Promos Tab -->
+                <div id="admin-promos" class="hidden">
+                    <div class="grid md:grid-cols-2 gap-3 mb-4">
+                        <input id="promo-code-new" type="text" placeholder="Code (e.g. SAVE20)"
+                            class="px-3 py-2.5 border border-sage-200 rounded-lg text-sm uppercase focus:outline-none"
+                            style="letter-spacing:.05em" />
+                        <select id="promo-type-new"
+                            class="px-3 py-2.5 border border-sage-200 rounded-lg text-sm text-sage-700 focus:outline-none">
+                            <option value="percentage">Percentage off (%)</option>
+                            <option value="fixed">Fixed amount (₹)</option>
+                        </select>
+                        <input id="promo-value-new" type="number" placeholder="Value"
+                            class="px-3 py-2.5 border border-sage-200 rounded-lg text-sm focus:outline-none" />
+                        <input id="promo-min-new" type="number" placeholder="Min. order (₹)"
+                            class="px-3 py-2.5 border border-sage-200 rounded-lg text-sm focus:outline-none" />
+                        <input id="promo-max-new" type="number" placeholder="Max. discount (₹, optional)"
+                            class="px-3 py-2.5 border border-sage-200 rounded-lg text-sm focus:outline-none" />
+                        <input id="promo-limit-new" type="number" placeholder="Usage limit (optional)"
+                            class="px-3 py-2.5 border border-sage-200 rounded-lg text-sm focus:outline-none" />
+                    </div>
+                    <button onclick="createPromo()"
+                        class="mb-4 bg-forest-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-forest-700 transition">Create
+                        Promo Code</button>
+                    <div id="promo-list" class="space-y-2 overflow-y-auto" style="max-height:40vh"></div>
+                </div>
+            </div>
+            <button onclick="closeModal('admin-modal')"
+                class="absolute top-4 right-4 text-sage-400 hover:text-sage-700">✕</button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════════════════════════ -->
+    <script>
+        const API = window.API_BASE || 'http://localhost:5000/api';
+
+        // ── Auth State ─────────────────────────────────────────────────────────────
+        let authState = { loggedIn: false, username: '', role: 'guest', userId: null };
+
+        function getToken() { return localStorage.getItem('access_token'); }
+        function setTokens(at, rt) {
+            localStorage.setItem('access_token', at);
+            if (rt) localStorage.setItem('refresh_token', rt);
+        }
+        function clearTokens() {
+            localStorage.removeItem('access_token');
+            localStorage.removeItem('refresh_token');
+        }
+
+        async function apiFetch(path, opts = {}) {
+            const token = getToken();
+            const headers = { 'Content-Type': 'application/json', ...(opts.headers || {}) };
+            if (token) headers['Authorization'] = `Bearer ${token}`;
+            let res = await fetch(`${API}${path}`, { ...opts, headers });
+
+            // Try refresh on 401
+            if (res.status === 401 && localStorage.getItem('refresh_token')) {
+                const rr = await fetch(`${API}/auth/refresh`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ refreshToken: localStorage.getItem('refresh_token') })
+                });
+                if (rr.ok) {
+                    const { accessToken, refreshToken } = await rr.json();
+                    setTokens(accessToken, refreshToken);
+                    headers['Authorization'] = `Bearer ${accessToken}`;
+                    res = await fetch(`${API}${path}`, { ...opts, headers });
+                } else {
+                    clearTokens();
+                    updateUI({ loggedIn: false });
+                }
+            }
+            return res;
+        }
+
+        // ── Cart State ─────────────────────────────────────────────────────────────
+        let cart = JSON.parse(localStorage.getItem('ecogrow_cart') || '[]');
+        let promoState = null; // { code, discount }
+        function saveCart() { localStorage.setItem('ecogrow_cart', JSON.stringify(cart)); }
+
+        // ── Filters ────────────────────────────────────────────────────────────────
+        let filters = { light: 'All', care: 'All', category: 'All' };
+        let searchQ = '';
+        let searchTimer = null;
+        let currentView = 'grid';
+        let nextCursor = null;
+        let hasMore = false;
+        let allProducts = [];
+
+        // ── Init ───────────────────────────────────────────────────────────────────
+        async function init() {
+            updateCartUI();
+            await checkAuth();
+            await loadCategories();
+            await fetchProducts();
+        }
+
+        async function checkAuth() {
+            const token = getToken();
+            if (!token) { updateUI({ loggedIn: false }); return; }
+            try {
+                const r = await apiFetch('/auth/status');
+                const d = await r.json();
+                updateUI(d);
+            } catch { updateUI({ loggedIn: false }); }
+        }
+
+        function updateUI(state) {
+            authState = state;
+            const li = state.loggedIn;
+            document.getElementById('btn-login').classList.toggle('hidden', li);
+            document.getElementById('btn-register').classList.toggle('hidden', li);
+            document.getElementById('btn-logout').classList.toggle('hidden', !li);
+            document.getElementById('btn-orders').classList.toggle('hidden', !li);
+            document.getElementById('btn-profile').classList.toggle('hidden', !li);
+            document.getElementById('btn-wishlist').classList.toggle('hidden', !li);
+            document.getElementById('auth-info').classList.toggle('hidden', !li);
+            const adminBtn = document.getElementById('btn-admin');
+            adminBtn.classList.toggle('hidden', !(li && state.role === 'admin'));
+            if (li) {
+                document.getElementById('welcome-msg').textContent = state.username;
+            }
+        }
+
+        // ── Categories ─────────────────────────────────────────────────────────────
+        async function loadCategories() {
+            try {
+                const r = await fetch(`${API}/products/categories`);
+                const cats = await r.json();
+                const wrap = document.getElementById('category-filters');
+                wrap.innerHTML = '<option value="All">All</option>';
+                cats.forEach(c => {
+                    const opt = document.createElement('option');
+                    opt.value = c;
+                    opt.textContent = c;
+                    wrap.appendChild(opt);
+                });
+            } catch { }
+        }
+
+        // ── Products ───────────────────────────────────────────────────────────────
+        async function fetchProducts(append = false) {
+            const grid = document.getElementById('product-grid');
+            if (!append) {
+                nextCursor = null;
+                allProducts = [];
+                grid.innerHTML = skeletonCards(8);
+            }
+
+            const params = new URLSearchParams({
+                sort: document.getElementById('sort-select').value,
+                limit: 12
+            });
+            if (filters.light !== 'All') params.set('light', filters.light);
+            if (filters.care !== 'All') params.set('care', filters.care);
+            if (filters.category !== 'All') params.set('category', filters.category);
+            if (document.getElementById('pet-safe-filter').checked) params.set('petSafe', 'true');
+            if (document.getElementById('in-stock-filter').checked) params.set('inStock', 'true');
+            const minP = document.getElementById('min-price').value;
+            const maxP = document.getElementById('max-price').value;
+            if (minP) params.set('minPrice', minP);
+            if (maxP) params.set('maxPrice', maxP);
+            if (searchQ) params.set('search', searchQ);
+            if (nextCursor && append) params.set('cursor', nextCursor);
+
+            try {
+                const r = await fetch(`${API}/products?${params}`);
+                const data = await r.json();
+                const products = data.products || data;
+                hasMore = data.hasMore || false;
+                nextCursor = data.nextCursor || null;
+
+                if (!append) {
+                    allProducts = products;
+                    document.getElementById('hero-count').textContent = data.total || products.length;
+                    document.getElementById('result-count').textContent = `${data.total || products.length} plants found`;
+                } else {
+                    allProducts = [...allProducts, ...products];
+                }
+
+                if (!append) grid.innerHTML = '';
+                products.forEach(p => {
+                    const div = document.createElement('div');
+                    div.innerHTML = renderCard(p, currentView);
+                    div.firstElementChild.style.animation = 'fadeUp .4s ease forwards';
+                    grid.appendChild(div.firstElementChild);
+                });
+
+                document.getElementById('empty-state').classList.toggle('hidden', allProducts.length > 0);
+                document.getElementById('product-grid').classList.toggle('hidden', allProducts.length === 0);
+                document.getElementById('load-more-btn').classList.toggle('hidden', !hasMore);
+            } catch (e) {
+                grid.innerHTML = '<p class="text-red-400 text-sm col-span-4 text-center py-10">Failed to load products. Is the server running?</p>';
+            }
+        }
+
+        async function loadMore() { await fetchProducts(true); }
+
+        function skeletonCards(n) {
+            return Array(n).fill(`<div class="product-card"><div class="skeleton h-52"></div><div class="p-4 space-y-2"><div class="skeleton h-4 rounded w-3/4"></div><div class="skeleton h-3 rounded w-1/2"></div><div class="skeleton h-8 rounded mt-4"></div></div></div>`).join('');
+        }
+
+        function renderCard(p, view) {
+            const stars = renderStars(p.rating, p.reviewCount);
+            const diffClass = { Easy: 'diff-easy', Moderate: 'diff-moderate', Hard: 'diff-hard' }[p.careDifficulty] || 'diff-easy';
+            const stockBadge = p.stockQuantity === 0
+                ? `<span class="text-xs px-2 py-0.5 rounded-full bg-red-100 text-red-600">Out of stock</span>`
+                : p.stockQuantity <= 5
+                    ? `<span class="text-xs px-2 py-0.5 rounded-full stock-badge-low">Only ${p.stockQuantity} left</span>`
+                    : `<span class="text-xs px-2 py-0.5 rounded-full in-stock-badge">In stock</span>`;
+
+            if (view === 'list') {
+                return `<div class="product-card flex overflow-hidden mb-4 cursor-pointer" onclick="openProduct('${p._id}')">
+      <div class="relative flex-shrink-0" style="width:8rem;height:8rem">
+        <img src="${p.imageUrl}" alt="${p.name}" class="w-full h-full object-cover"/>
+        ${p.isFeatured ? '<span class="featured-badge">FEATURED</span>' : ''}
+      </div>
+      <div class="p-4 flex-1 flex justify-between items-start">
+        <div>
+          <h3 class="font-semibold text-forest-900 mb-1">${p.name}</h3>
+          <p class="text-xs text-sage-500 line-clamp-2 mb-2">${p.description}</p>
+          <div class="flex items-center gap-2">${stars}${stockBadge}</div>
+        </div>
+        <div class="text-right flex-shrink-0 ml-4">
+          <p class="font-bold text-lg text-forest-800 mb-2">₹${p.price.toFixed(2)}</p>
+          <button onclick="event.stopPropagation();quickAdd(${JSON.stringify(p).replace(/"/g, '&quot;')})" class="text-xs bg-forest-600 text-white px-3 py-1.5 rounded-lg hover:bg-forest-700 transition" ${p.stockQuantity === 0 ? 'disabled' : ''}>${p.stockQuantity === 0 ? 'Sold out' : 'Add to Cart'}</button>
+        </div>
+      </div>
+    </div>`;
+            }
+
+            return `<div class="product-card cursor-pointer relative" onclick="openProduct('${p._id}')">
+    <div class="relative h-52 overflow-hidden">
+      <img src="${p.imageUrl}" alt="${p.name}" class="w-full h-full object-cover" style="transition:transform .4s ease" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      ${p.isFeatured ? '<span class="featured-badge">FEATURED</span>' : ''}
+      <button onclick="event.stopPropagation();toggleWishlist('${p._id}',this)" class="absolute top-2 right-2 p-1.5 bg-white/90 rounded-full shadow text-red-300 hover:text-red-500 transition" id="wish-${p._id}">
+        <svg style="width:.875rem;height:.875rem" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </button>
+    </div>
+    <div class="p-4">
+      <div class="flex justify-between items-start mb-1">
+        <h3 class="font-semibold text-forest-900 text-sm leading-tight">${p.name}</h3>
+        <span class="text-xs px-2 py-0.5 rounded-full ml-2 flex-shrink-0 ${diffClass}">${p.careDifficulty}</span>
+      </div>
+      <p class="text-xs text-sage-500 line-clamp-2 mb-2">${p.description}</p>
+      <div class="flex items-center gap-1 mb-3">${stars}</div>
+      <div class="flex flex-wrap gap-1 mb-3">
+        <span class="tag-chip">☀ ${p.lightNeeds}</span>
+        ${p.petSafe ? '<span class="tag-chip">🐾 Pet safe</span>' : ''}
+        ${stockBadge}
+      </div>
+      <div class="flex items-center justify-between">
+        <span class="font-bold text-lg text-forest-800">₹${p.price.toFixed(2)}</span>
+        <button onclick="event.stopPropagation();quickAdd(${JSON.stringify(p).replace(/"/g, '&quot;')})" class="text-xs bg-forest-600 text-white px-3 py-1.5 rounded-lg hover:bg-forest-700 transition disabled:opacity-50" ${p.stockQuantity === 0 ? 'disabled' : ''}>${p.stockQuantity === 0 ? 'Sold out' : 'Add to Cart'}</button>
+      </div>
+      ${p.variants && p.variants.length > 0 ? `<div class="flex flex-wrap gap-1 mt-2">${p.variants.map(v => `<span class="variant-btn text-xs">${v.name}${v.priceModifier > 0 ? ` +₹${v.priceModifier}` : ''}</span>`).join('')}</div>` : ''}
+    </div>
+  </div>`;
+        }
+
+        function renderStars(rating, count) {
+            const full = Math.round(rating || 0);
+            let s = '';
+            for (let i = 1; i <= 5; i++) s += `<span class="${i <= full ? 'star-display' : 'star-empty'}" style="font-size:.7rem">★</span>`;
+            if (count) s += `<span class="text-sage-400 ml-1" style="font-size:.65rem">(${count})</span>`;
+            return s;
+        }
+
+        // ── Product Detail ──────────────────────────────────────────────────────────
+        async function openProduct(id) {
+            openModal('product-modal');
+            document.getElementById('product-modal-body').innerHTML = '<div class="p-8 flex justify-center"><div class="skeleton w-full h-80 rounded-xl"></div></div>';
+            try {
+                const [pr, rr] = await Promise.all([
+                    fetch(`${API}/products/${id}`),
+                    fetch(`${API}/products/${id}/reviews?limit=5`)
+                ]);
+                const p = await pr.json();
+                const { reviews = [] } = await rr.json();
+
+                let variantHtml = '';
+                if (p.variants && p.variants.length > 0) {
+                    variantHtml = `<div class="mb-4">
+        <p class="text-sm font-semibold text-sage-700 mb-2">Select size / variant</p>
+        <div class="flex flex-wrap gap-2" id="variant-group">
+          ${p.variants.map((v, i) => `<button class="variant-btn ${i === 0 ? 'active' : ''}" onclick="selectVariant(this,'${v.name}',${v.priceModifier})">${v.name}${v.priceModifier > 0 ? ` (+₹${v.priceModifier})` : ''}</button>`).join('')}
+        </div>
+      </div>`;
+                }
+
+                const diffClass = { Easy: 'diff-easy', Moderate: 'diff-moderate', Hard: 'diff-hard' }[p.careDifficulty] || 'diff-easy';
+                document.getElementById('product-modal-body').innerHTML = `
+      <div>
+        <div class="relative">
+          <img src="${p.imageUrl}" alt="${p.name}" class="w-full h-72 object-cover"/>
+          <button onclick="closeModal('product-modal')" class="absolute top-4 right-4 p-2 bg-white/90 rounded-full shadow text-sage-500 hover:text-sage-800 transition">✕</button>
+          <button onclick="toggleWishlist('${p._id}', this)" id="detail-wish-${p._id}" class="absolute top-4 right-14 p-2 bg-white/90 rounded-full shadow text-red-300 hover:text-red-500 transition">
+            <svg style="width:1.2rem;height:1.2rem" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-2">
+            <h2 class="font-display text-2xl font-bold text-forest-900 leading-tight">${p.name}</h2>
+            <span class="text-xs px-2 py-1 rounded-full ml-3 flex-shrink-0 ${diffClass}">${p.careDifficulty}</span>
+          </div>
+          <div class="flex items-center gap-2 mb-3">${renderStars(p.rating, p.reviewCount)}</div>
+          <p class="text-sage-600 text-sm leading-relaxed mb-4">${p.description}</p>
+          <div class="grid grid-cols-2 gap-2 mb-4 text-sm">
+            <div class="bg-sage-50 rounded-lg p-3"><span class="text-sage-400 block text-xs mb-1">Light</span><span class="font-medium text-sage-700">☀ ${p.lightNeeds}</span></div>
+            <div class="bg-sage-50 rounded-lg p-3"><span class="text-sage-400 block text-xs mb-1">Care</span><span class="font-medium text-sage-700">🌿 ${p.careDifficulty}</span></div>
+            <div class="bg-sage-50 rounded-lg p-3"><span class="text-sage-400 block text-xs mb-1">Pet Safe</span><span class="font-medium text-sage-700">${p.petSafe ? '🐾 Yes' : '✗ No'}</span></div>
+            <div class="bg-sage-50 rounded-lg p-3"><span class="text-sage-400 block text-xs mb-1">Stock</span><span class="font-medium text-sage-700">${p.stockQuantity > 0 ? p.stockQuantity + ' available' : '❌ Out of stock'}</span></div>
+          </div>
+          ${p.careInstructions ? `<div class="bg-forest-50 border border-forest-100 rounded-xl p-4 mb-4"><p class="text-xs font-semibold text-forest-700 mb-1">💚 Care Instructions</p><p class="text-sm text-forest-800 leading-relaxed">${p.careInstructions}</p></div>` : ''}
+          ${variantHtml}
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-bold text-2xl text-forest-800" id="detail-price">₹${p.price.toFixed(2)}</span>
+            <button onclick="quickAdd(${JSON.stringify(p).replace(/"/g, '&quot;')}); closeModal('product-modal')" class="bg-forest-600 text-white px-6 py-2.5 rounded-xl font-semibold hover:bg-forest-700 transition text-sm" ${p.stockQuantity === 0 ? 'disabled' : ''}>
+              ${p.stockQuantity === 0 ? 'Out of Stock' : 'Add to Cart'}
+            </button>
+          </div>
+          <!-- Reviews -->
+          <div class="border-t border-sage-100 pt-4">
+            <h3 class="font-semibold text-forest-900 mb-3 text-sm">Customer Reviews</h3>
+            <div class="space-y-3 mb-4">${reviews.length ? reviews.map(rv => `
+              <div class="border-b border-sage-50 pb-3">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="font-medium text-xs text-forest-700">${rv.username}</span>
+                  <span>${renderStars(rv.rating, 0)}</span>
+                  <span class="text-xs text-sage-400">${new Date(rv.createdAt).toLocaleDateString('en-IN')}</span>
+                </div>
+                <p class="text-sm text-sage-600">${rv.comment}</p>
+              </div>`).join('') : '<p class="text-sm text-sage-400">No reviews yet. Be the first!</p>'}
+            </div>
+            ${authState.loggedIn && authState.role !== 'admin' ? `
+            <div id="review-form-${p._id}" class="bg-sage-50 rounded-xl p-4">
+              <p class="text-sm font-semibold text-sage-700 mb-2">Write a Review</p>
+              <div class="flex gap-2 mb-2" id="star-input-${p._id}">${[1, 2, 3, 4, 5].map(s => `<button onclick="setReviewStar(${s},'${p._id}')" class="text-xl star-input" data-val="${s}" style="color:#d1d5db">★</button>`).join('')}</div>
+              <textarea id="rev-comment-${p._id}" placeholder="Share your experience…" class="w-full px-3 py-2 border border-sage-200 rounded-lg text-sm focus:outline-none focus:border-forest-500 mb-2" rows="2"></textarea>
+              <button onclick="submitReview('${p._id}')" class="text-sm bg-forest-600 text-white px-4 py-1.5 rounded-lg hover:bg-forest-700 transition">Submit Review</button>
+            </div>` : ''}
+          </div>
+        </div>
+      </div>`;
+            } catch { document.getElementById('product-modal-body').innerHTML = '<p class="text-red-400 p-8">Failed to load product</p>'; }
+        }
+
+        let selectedVariant = { name: '', priceModifier: 0 };
+        function selectVariant(btn, name, pm) {
+            document.querySelectorAll('#variant-group .variant-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            selectedVariant = { name, priceModifier: pm };
+        }
+
+        let reviewStars = {};
+        function setReviewStar(val, pid) {
+            reviewStars[pid] = val;
+            document.querySelectorAll(`#star-input-${pid} .star-input`).forEach(b => {
+                b.style.color = parseInt(b.dataset.val) <= val ? '#f59e0b' : '#d1d5db';
+            });
+        }
+
+        async function submitReview(pid) {
+            const rating = reviewStars[pid];
+            const comment = document.getElementById(`rev-comment-${pid}`)?.value?.trim();
+            if (!rating) { toast('Please select a star rating ⭐', '⚠️'); return; }
+            if (!comment) { toast('Please write a comment', '⚠️'); return; }
+            try {
+                const r = await apiFetch(`/products/${pid}/reviews`, { method: 'POST', body: JSON.stringify({ rating, comment }) });
+                const d = await r.json();
+                if (r.ok) { toast('Review submitted! 🌿'); openProduct(pid); }
+                else toast(d.error || 'Failed', '❌');
+            } catch { toast('Network error', '❌'); }
+        }
+
+        // ── Wishlist ───────────────────────────────────────────────────────────────
+        async function toggleWishlist(pid, btn) {
+            if (!authState.loggedIn) { openModal('login-modal'); return; }
+            try {
+                const r = await apiFetch(`/wishlist/${pid}`, { method: 'POST' });
+                const d = await r.json();
+                if (r.ok) {
+                    const color = d.wishlisted ? '#ef4444' : '#fca5a5';
+                    if (btn) btn.style.color = color;
+                    const el = document.getElementById(`wish-${pid}`);
+                    if (el) el.style.color = color;
+                    const el2 = document.getElementById(`detail-wish-${pid}`);
+                    if (el2) el2.style.color = color;
+                    toast(d.wishlisted ? 'Added to wishlist ❤' : 'Removed from wishlist');
+                }
+            } catch { }
+        }
+
+        function openWishlist() {
+            if (!authState.loggedIn) { openModal('login-modal'); return; }
+            openModal('wishlist-modal');
+            loadWishlist();
+        }
+
+        async function loadWishlist() {
+            const el = document.getElementById('wishlist-content');
+            el.innerHTML = '<p class="text-sage-400 text-center py-6 text-sm">Loading…</p>';
+            try {
+                const r = await apiFetch('/wishlist');
+                const items = await r.json();
+                if (!items.length) { el.innerHTML = '<p class="text-sage-400 text-center py-10 text-sm">Your wishlist is empty 🌿</p>'; return; }
+                el.innerHTML = items.map(p => `
+      <div class="flex items-center gap-3 border-b border-sage-100 pb-3">
+        <img src="${p.imageUrl}" alt="${p.name}" class="w-14 h-14 rounded-xl object-cover"/>
+        <div class="flex-1">
+          <p class="font-medium text-sm text-forest-900">${p.name}</p>
+          <p class="text-xs text-sage-400">₹${Number(p.price).toFixed(2)}</p>
+        </div>
+        <button onclick="quickAdd(${JSON.stringify(p).replace(/"/g, '&quot;')}); closeModal('wishlist-modal')" class="text-xs bg-forest-600 text-white px-3 py-1.5 rounded-lg hover:bg-forest-700 transition">Add</button>
+      </div>`).join('');
+            } catch { }
+        }
+
+        // ── Cart ───────────────────────────────────────────────────────────────────
+        function quickAdd(p) {
+            addToCart(p);
+            toggleCart();
+        }
+
+        function addToCart(p, qty = 1, variantName = '') {
+            const key = p._id + (variantName || '');
+            const existing = cart.find(i => (i._id + (i.variantName || '')) === key);
+            if (existing) existing.quantity = Math.min(existing.quantity + qty, p.stockQuantity || 99);
+            else cart.push({ ...p, quantity: qty, variantName });
+            saveCart();
+            updateCartUI();
+            toast(`${p.name} added to cart 🌿`);
+            const badge = document.getElementById('cart-badge');
+            badge.classList.add('pulse');
+            setTimeout(() => badge.classList.remove('pulse'), 400);
+        }
+
+        function updateCartUI() {
+            const cartItemCount = cart.reduce((s, i) => s + i.quantity, 0);
+            document.getElementById('cart-badge').textContent = cartItemCount;
+
+            const cartEl = document.getElementById('cart-items');
+            if (!cartEl) return;
+
+            if (!cart.length) {
+                cartEl.innerHTML = '<div class="text-center py-12"><p class="text-4xl mb-3">🌱</p><p class="text-sage-400 text-sm">Your cart is empty</p></div>';
+            } else {
+                cartEl.innerHTML = cart.map((item, i) => `
+      <div class="flex items-center gap-3 border-b border-sage-100 pb-4">
+        <img src="${item.imageUrl}" alt="${item.name}" class="rounded-xl object-cover flex-shrink-0" style="width:3.5rem;height:3.5rem"/>
+        <div class="flex-1 min-w-0">
+          <p class="font-medium text-sm text-forest-900 truncate">${item.name}</p>
+          ${item.variantName ? `<p class="text-xs text-sage-400">${item.variantName}</p>` : ''}
+          <p class="text-xs text-sage-500">₹${item.price.toFixed(2)} × ${item.quantity} = ₹${(item.price * item.quantity).toFixed(2)}</p>
+        </div>
+        <div class="flex items-center gap-1">
+          <button class="qty-btn w-6 h-6 rounded-full border border-sage-200 flex items-center justify-center text-sm font-bold text-sage-600" onclick="changeQty(${i},-1)">−</button>
+          <span class="text-sm font-medium w-6 text-center">${item.quantity}</span>
+          <button class="qty-btn w-6 h-6 rounded-full border border-sage-200 flex items-center justify-center text-sm font-bold text-sage-600" onclick="changeQty(${i},1)">+</button>
+          <button onclick="removeFromCart(${i})" class="ml-1 text-red-400 hover:text-red-600 text-xs">✕</button>
+        </div>
+      </div>`).join('');
+            }
+
+            const subtotal = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+            const discount = promoState ? promoState.discount : 0;
+            const shipping = (subtotal - discount) >= 500 ? 0 : 49;
+            const total = subtotal - discount + shipping;
+
+            document.getElementById('cart-subtotal').textContent = `₹${subtotal.toFixed(2)}`;
+            document.getElementById('cart-shipping').textContent = shipping === 0 ? 'FREE' : `₹${shipping.toFixed(2)}`;
+            document.getElementById('cart-total').textContent = `₹${total.toFixed(2)}`;
+
+            const dRow = document.getElementById('discount-row');
+            if (discount > 0 && promoState) {
+                dRow.classList.remove('hidden');
+                document.getElementById('discount-code').textContent = promoState.code;
+                document.getElementById('cart-discount').textContent = `-₹${discount.toFixed(2)}`;
+            } else {
+                dRow.classList.add('hidden');
+            }
+        }
+
+        function changeQty(i, delta) {
+            if (cart[i].quantity + delta < 1) { removeFromCart(i); return; }
+            cart[i].quantity += delta;
+            saveCart(); updateCartUI();
+        }
+        function removeFromCart(i) { cart.splice(i, 1); saveCart(); updateCartUI(); }
+
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('overlay');
+            const isOpen = drawer.classList.contains('open');
+            drawer.classList.toggle('open', !isOpen);
+            overlay.classList.toggle('hidden', isOpen);
+            updateCartUI();
+        }
+
+        // ── Promo ──────────────────────────────────────────────────────────────────
+        async function applyPromo() {
+            const code = document.getElementById('promo-input').value.trim();
+            const msgEl = document.getElementById('promo-msg');
+            if (!code) return;
+            if (!authState.loggedIn) { openModal('login-modal'); return; }
+            const subtotal = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+            try {
+                const r = await apiFetch('/promo/validate', { method: 'POST', body: JSON.stringify({ code, subtotal }) });
+                const d = await r.json();
+                msgEl.classList.remove('hidden');
+                if (r.ok && d.valid) {
+                    promoState = { code: d.code, discount: d.discount };
+                    msgEl.className = 'mt-2 text-sm promo-success';
+                    msgEl.textContent = `✅ "${d.code}" applied — ₹${d.discount.toFixed(2)} off!`;
+                    updateCartUI();
+                } else {
+                    promoState = null;
+                    msgEl.className = 'mt-2 text-sm promo-error';
+                    msgEl.textContent = `❌ ${d.error || 'Invalid code'}`;
+                    updateCartUI();
+                }
+            } catch { }
+        }
+
+        // ── Checkout ───────────────────────────────────────────────────────────────
+        function openCheckout() {
+            if (!authState.loggedIn) {
+                toast('Please login to checkout', '🔐');
+                toggleCart();
+                openModal('login-modal');
+                return;
+            }
+            if (!cart.length) { toast('Your cart is empty', '🛒'); return; }
+            toggleCart();
+            // Prefill checkout totals
+            const subtotal = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+            const discount = promoState ? promoState.discount : 0;
+            const shipping = (subtotal - discount) >= 500 ? 0 : 49;
+            const total = subtotal - discount + shipping;
+            document.getElementById('co-subtotal').textContent = `₹${subtotal.toFixed(2)}`;
+            document.getElementById('co-shipping').textContent = shipping === 0 ? 'FREE' : `₹${shipping.toFixed(2)}`;
+            document.getElementById('co-total').textContent = `₹${total.toFixed(2)}`;
+            const coDisc = document.getElementById('co-discount-row');
+            if (discount > 0) { coDisc.classList.remove('hidden'); document.getElementById('co-discount').textContent = `-₹${discount.toFixed(2)}`; }
+            else coDisc.classList.add('hidden');
+            openModal('checkout-modal');
+        }
+
+        async function placeOrder() {
+            const shipping = {
+                name: document.getElementById('ship-name').value.trim(),
+                address: document.getElementById('ship-address').value.trim(),
+                city: document.getElementById('ship-city').value.trim(),
+                state: document.getElementById('ship-state').value.trim(),
+                zip: document.getElementById('ship-zip').value.trim(),
+            };
+            const paymentMethod = document.querySelector('[name="payment"]:checked')?.value || 'COD';
+            const notes = document.getElementById('ship-notes').value.trim();
+            const errEl = document.getElementById('checkout-err');
+
+            if (!shipping.name || !shipping.address || !shipping.city || !shipping.zip) {
+                errEl.textContent = 'Please fill in all required shipping fields';
+                errEl.classList.remove('hidden'); return;
+            }
+            errEl.classList.add('hidden');
+
+            const subtotal = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+            const btn = document.getElementById('place-order-btn');
+            btn.textContent = 'Placing order…'; btn.disabled = true;
+
+            try {
+                const r = await apiFetch('/checkout', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        cart,
+                        shipping,
+                        promoCode: promoState?.code || '',
+                        paymentMethod,
+                        notes
+                    })
+                });
+                const d = await r.json();
+                if (r.ok) {
+                    cart = []; promoState = null;
+                    localStorage.removeItem('ecogrow_cart');
+                    updateCartUI();
+                    closeModal('checkout-modal');
+                    toast(`Order ${d.orderNumber} placed! 🌿 Check your email.`);
+                    fetchProducts();
+                } else {
+                    errEl.textContent = d.error || 'Order failed';
+                    errEl.classList.remove('hidden');
+                }
+            } catch {
+                errEl.textContent = 'Network error. Please try again.';
+                errEl.classList.remove('hidden');
+            }
+            btn.textContent = 'Place Order'; btn.disabled = false;
+        }
+
+        // ── Auth ───────────────────────────────────────────────────────────────────
+        async function handleLogin() {
+            const loginId = document.getElementById('login-id').value.trim();
+            const password = document.getElementById('login-pw').value;
+            const errEl = document.getElementById('login-err');
+            if (!loginId || !password) { errEl.textContent = 'All fields required'; errEl.classList.remove('hidden'); return; }
+            try {
+                const r = await fetch(`${API}/auth/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ loginId, password }) });
+                const d = await r.json();
+                if (r.ok) {
+                    setTokens(d.accessToken, d.refreshToken);
+                    updateUI({ loggedIn: true, username: d.username, role: d.role, userId: d.userId });
+                    closeModal('login-modal');
+                    toast(`Welcome back, ${d.username}! 🌿`);
+                    document.getElementById('login-id').value = '';
+                    document.getElementById('login-pw').value = '';
+                } else { errEl.textContent = d.error; errEl.classList.remove('hidden'); }
+            } catch { errEl.textContent = 'Network error'; errEl.classList.remove('hidden'); }
+        }
+
+        async function handleRegister() {
+            const username = document.getElementById('reg-user').value.trim();
+            const email = document.getElementById('reg-email').value.trim();
+            const password = document.getElementById('reg-pw').value;
+            const errEl = document.getElementById('reg-err');
+            if (!username || !email || !password) { errEl.textContent = 'All fields required'; errEl.classList.remove('hidden'); return; }
+            try {
+                const r = await fetch(`${API}/auth/register`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username, email, password }) });
+                const d = await r.json();
+                if (r.ok) {
+                    setTokens(d.accessToken, d.refreshToken);
+                    updateUI({ loggedIn: true, username: d.username, role: d.role });
+                    closeModal('register-modal');
+                    toast(`Welcome to EcoGrow, ${d.username}! 🌿`);
+                } else {
+                    errEl.textContent = Array.isArray(d.details) ? d.details.join(', ') : (d.error || 'Failed');
+                    errEl.classList.remove('hidden');
+                }
+            } catch { errEl.textContent = 'Network error'; errEl.classList.remove('hidden'); }
+        }
+
+        async function logout() {
+            const refreshToken = localStorage.getItem('refresh_token');
+            await apiFetch('/auth/logout', { method: 'POST', body: JSON.stringify({ refreshToken }) });
+            clearTokens();
+            updateUI({ loggedIn: false });
+            toast('Logged out. See you soon! 🌿');
+        }
+
+        // ── Profile ────────────────────────────────────────────────────────────────
+        async function openProfileModal() {
+            openModal('profile-modal');
+            try {
+                const r = await apiFetch('/profile');
+                const u = await r.json();
+                document.getElementById('prof-username').value = u.username || '';
+                document.getElementById('prof-email').value = u.email || '';
+            } catch { }
+        }
+        document.getElementById('btn-profile').onclick = openProfileModal;
+
+        async function saveProfile() {
+            const username = document.getElementById('prof-username').value.trim();
+            const email = document.getElementById('prof-email').value.trim();
+            const password = document.getElementById('prof-pw').value;
+            const msgEl = document.getElementById('prof-msg');
+            const body = {};
+            if (username) body.username = username;
+            if (email) body.email = email;
+            if (password) body.password = password;
+            try {
+                const r = await apiFetch('/profile', { method: 'PUT', body: JSON.stringify(body) });
+                const d = await r.json();
+                msgEl.classList.remove('hidden');
+                if (r.ok) {
+                    msgEl.className = 'text-sm text-center text-green-700';
+                    msgEl.textContent = 'Profile updated successfully ✅';
+                    if (body.username) { authState.username = body.username; document.getElementById('welcome-msg').textContent = body.username; }
+                } else {
+                    msgEl.className = 'text-sm text-center text-red-500';
+                    msgEl.textContent = d.error || 'Update failed';
+                }
+            } catch { }
+        }
+
+        // ── Orders ─────────────────────────────────────────────────────────────────
+        document.getElementById('btn-orders').onclick = async () => {
+            if (!authState.loggedIn) { openModal('login-modal'); return; }
+            openModal('orders-modal');
+            loadMyOrders();
+        };
+
+        async function loadMyOrders() {
+            const el = document.getElementById('orders-list');
+            el.innerHTML = '<p class="text-sage-400 text-center py-6 text-sm">Loading…</p>';
+            try {
+                const r = await apiFetch('/orders');
+                const { orders = [] } = await r.json();
+                if (!orders.length) { el.innerHTML = '<p class="text-sage-400 text-center py-10 text-sm">No orders yet 🌱</p>'; return; }
+                el.innerHTML = orders.map(o => `
+      <div class="border border-sage-200 rounded-xl p-4 hover:border-forest-300 transition cursor-pointer" onclick="openOrderDetail('${o._id}')">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <p class="font-bold text-sm text-forest-900">${o.orderNumber || '#' + o._id.slice(-8)}</p>
+            <p class="text-xs text-sage-400">${new Date(o.orderDate).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+          </div>
+          <span class="font-bold text-forest-700">₹${o.totalAmount.toFixed(2)}</span>
+        </div>
+        <div class="flex items-center justify-between">
+          ${statusBadge(o.status)}
+          <p class="text-xs text-sage-400">${o.items.length} item${o.items.length !== 1 ? 's' : ''}</p>
+        </div>
+      </div>`).join('');
+            } catch { el.innerHTML = '<p class="text-red-400 text-sm text-center">Failed to load orders</p>'; }
+        }
+
+        async function openOrderDetail(id) {
+            openModal('order-detail-modal');
+            document.getElementById('order-detail-body').innerHTML = '<p class="text-sage-400 text-center py-8 text-sm">Loading…</p>';
+            try {
+                const r = await apiFetch(`/orders/${id}`);
+                const o = await r.json();
+                const timelineHtml = (o.timeline || []).map(t => `
+      <div class="relative pl-4 pb-3">
+        <div class="timeline-dot" style="top:.125rem"></div>
+        <p class="text-sm font-medium text-forest-900">${t.status}</p>
+        ${t.message ? `<p class="text-xs text-sage-500">${t.message}</p>` : ''}
+        <p class="text-xs text-sage-400">${new Date(t.timestamp).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</p>
+      </div>`).join('');
+                document.getElementById('order-detail-body').innerHTML = `
+      <div class="flex justify-between items-start mb-4">
+        <div><h2 class="font-bold text-xl text-forest-900">${o.orderNumber || '#' + id.slice(-8)}</h2>
+        <p class="text-xs text-sage-400">${new Date(o.orderDate).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</p></div>
+        ${statusBadge(o.status)}
+      </div>
+      <div class="space-y-2 mb-4 border-b border-sage-100 pb-4">
+        ${o.items.map(i => `<div class="flex justify-between text-sm"><span class="text-sage-700">${i.name}${i.variantName ? ` (${i.variantName})` : ''} × ${i.quantity}</span><span class="font-medium text-forest-700">₹${(i.price * i.quantity).toFixed(2)}</span></div>`).join('')}
+        ${o.discount > 0 ? `<div class="flex justify-between text-sm text-green-700 font-medium"><span>Discount (${o.promoCode})</span><span>-₹${o.discount.toFixed(2)}</span></div>` : ''}
+        <div class="flex justify-between text-sm text-sage-600"><span>Shipping</span><span>${o.shippingFee === 0 ? 'FREE' : '₹' + o.shippingFee.toFixed(2)}</span></div>
+        <div class="flex justify-between font-bold text-forest-900"><span>Total</span><span>₹${o.totalAmount.toFixed(2)}</span></div>
+      </div>
+      <div class="mb-4 text-sm border-b border-sage-100 pb-4">
+        <p class="font-semibold text-sage-700 mb-1">📦 Shipping to</p>
+        <p class="text-sage-600">${o.shippingAddress.name}<br>${o.shippingAddress.address}, ${o.shippingAddress.city}${o.shippingAddress.state ? ', ' + o.shippingAddress.state : ''} — ${o.shippingAddress.zip}</p>
+      </div>
+      ${o.timeline && o.timeline.length ? `<div><p class="font-semibold text-sage-700 mb-3 text-sm">📋 Order Timeline</p><div class="order-timeline">${timelineHtml}</div></div>` : ''}`;
+            } catch { document.getElementById('order-detail-body').innerHTML = '<p class="text-red-400 p-6 text-sm">Failed to load order</p>'; }
+        }
+
+        // ── Admin ──────────────────────────────────────────────────────────────────
+        function adminTab(tab) {
+            ['analytics', 'orders', 'add', 'promos'].forEach(t => {
+                document.getElementById(`admin-${t}`).classList.toggle('hidden', t !== tab);
+                const btn = document.getElementById(`tab-${t}`);
+                if (t === tab) { btn.className = 'pb-2 admin-tab-active text-forest-700 cursor-pointer'; }
+                else { btn.className = 'pb-2 border-b-2 border-transparent text-sage-500 cursor-pointer'; }
+            });
+            if (tab === 'orders') loadAdminOrders();
+            if (tab === 'analytics') loadAnalytics();
+            if (tab === 'promos') loadPromos();
+        }
+
+        async function loadAnalytics() {
+            try {
+                const r = await apiFetch('/admin/analytics');
+                const d = await r.json();
+                const s = d.summary;
+                document.getElementById('analytics-stats').innerHTML = [
+                    { label: 'Total Revenue', val: `₹${Number(s.totalRevenue).toFixed(2)}`, icon: '💰' },
+                    { label: 'Total Orders', val: s.totalOrders, icon: '📦' },
+                    { label: 'Customers', val: s.totalCustomers, icon: '👥' },
+                    { label: 'Products', val: s.totalProducts, icon: '🌿' },
+                    { label: 'Revenue (30 days)', val: `₹${Number(s.recentRevenue).toFixed(2)}`, icon: '📈' },
+                    { label: 'Orders (30 days)', val: s.recentOrders, icon: '🛒' },
+                ].map(c => `<div class="stat-card"><p class="text-xs text-sage-500 mb-1">${c.icon} ${c.label}</p><p class="text-xl font-bold text-forest-900">${c.val}</p></div>`).join('');
+
+                document.getElementById('analytics-top').innerHTML = (d.topProducts || []).map(p =>
+                    `<div class="flex justify-between items-center bg-sage-50 rounded-lg px-3 py-2 text-sm">
+        <span class="font-medium text-forest-900">${p._id}</span>
+        <span class="text-sage-500">${p.sold} sold · ₹${Number(p.revenue).toFixed(0)}</span>
+      </div>`).join('') || '<p class="text-sage-400 text-sm">No data yet</p>';
+
+                document.getElementById('analytics-lowstock').innerHTML = (d.lowStockProducts || []).map(p =>
+                    `<div class="flex justify-between items-center bg-yellow-100 rounded-lg px-3 py-2 text-sm">
+        <span class="font-medium text-forest-900">${p.name}</span>
+        <span class="text-yellow-700 font-semibold">${p.stockQuantity} left ⚠</span>
+      </div>`).join('') || '<p class="text-green-700 text-sm">All products have healthy stock 🌿</p>';
+            } catch { }
+        }
+
+        async function loadAdminOrders() {
+            const el = document.getElementById('admin-orders-list');
+            const status = document.getElementById('order-status-filter')?.value || 'All';
+            el.innerHTML = '<p class="text-sage-400 text-center py-6 text-sm">Loading…</p>';
+            try {
+                const r = await apiFetch(`/admin/orders?status=${status}&limit=50`);
+                const { orders = [] } = await r.json();
+                if (!orders.length) { el.innerHTML = '<p class="text-sage-400 text-center py-6 text-sm">No orders found</p>'; return; }
+                el.innerHTML = orders.map(o => `
+      <div class="border border-sage-200 rounded-xl p-4">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <p class="font-bold text-sm text-forest-900">${o.orderNumber || '#' + o._id.slice(-8)}</p>
+            <p class="text-xs text-sage-400">${new Date(o.orderDate).toLocaleDateString('en-IN')} · ${o.user?.username || 'N/A'} (${o.user?.email || ''})</p>
+          </div>
+          <span class="font-bold text-forest-700 text-sm">₹${o.totalAmount.toFixed(2)}</span>
+        </div>
+        <div class="flex items-center gap-3">
+          ${statusBadge(o.status)}
+          <select onchange="adminUpdateOrder('${o._id}',this.value)" class="text-xs border border-sage-200 rounded-lg px-2 py-1 text-sage-700">
+            ${['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled'].map(s => `<option ${s === o.status ? 'selected' : ''}>${s}</option>`).join('')}
+          </select>
+        </div>
+      </div>`).join('');
+            } catch { el.innerHTML = '<p class="text-red-400 text-sm text-center">Failed to load orders</p>'; }
+        }
+
+        async function adminUpdateOrder(id, status) {
+            const r = await apiFetch(`/admin/orders/${id}/status`, { method: 'PATCH', body: JSON.stringify({ status }) });
+            if (r.ok) { toast(`Order updated to ${status}`); }
+        }
+
+        async function handleAddProduct() {
+            const errEl = document.getElementById('ap-err');
+            const data = {
+                name: document.getElementById('ap-name').value.trim(),
+                price: parseFloat(document.getElementById('ap-price').value),
+                description: document.getElementById('ap-desc').value.trim(),
+                imageUrl: document.getElementById('ap-image').value.trim(),
+                lightNeeds: document.getElementById('ap-light').value,
+                careDifficulty: document.getElementById('ap-care').value,
+                category: document.getElementById('ap-category').value.trim(),
+                petSafe: document.getElementById('ap-petsafe').checked,
+                isFeatured: document.getElementById('ap-featured').checked,
+                stockQuantity: parseInt(document.getElementById('ap-stock').value) || 0
+            };
+            if (!data.name || !data.price) { errEl.textContent = 'Name and price are required'; errEl.classList.remove('hidden'); return; }
+            try {
+                const r = await apiFetch('/admin/products', { method: 'POST', body: JSON.stringify(data) });
+                const d = await r.json();
+                if (r.ok) { closeModal('admin-modal'); toast(`${data.name} added! 🌿`); fetchProducts(); }
+                else {
+                    errEl.textContent = Array.isArray(d.details) ? d.details.join(', ') : (d.error || 'Failed');
+                    errEl.classList.remove('hidden');
+                }
+            } catch { errEl.textContent = 'Network error'; errEl.classList.remove('hidden'); }
+        }
+
+        async function loadPromos() {
+            const el = document.getElementById('promo-list');
+            try {
+                const r = await apiFetch('/admin/promos');
+                const promos = await r.json();
+                if (!promos.length) { el.innerHTML = '<p class="text-sage-400 text-sm text-center py-4">No promo codes yet</p>'; return; }
+                el.innerHTML = promos.map(p => `
+      <div class="flex items-center justify-between bg-sage-50 rounded-lg px-3 py-2.5">
+        <div>
+          <span class="font-bold text-sm text-forest-900 font-mono">${p.code}</span>
+          <span class="ml-2 text-xs text-sage-500">${p.type === 'percentage' ? p.value + '% off' : '₹' + p.value + ' off'}${p.minOrderAmount > 0 ? ' · min ₹' + p.minOrderAmount : ''}</span>
+          <span class="ml-2 text-xs ${p.isActive ? 'text-green-700' : 'text-red-500'}">${p.isActive ? 'Active' : 'Disabled'}</span>
+          <span class="ml-1 text-xs text-sage-400">Used: ${p.usedCount}${p.usageLimit ? '/' + p.usageLimit : ''}</span>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="togglePromo('${p._id}',${!p.isActive})" class="text-xs px-2 py-1 rounded border border-sage-200 hover:bg-sage-100">${p.isActive ? 'Disable' : 'Enable'}</button>
+          <button onclick="deletePromo('${p._id}')" class="text-xs px-2 py-1 rounded border border-red-200 text-red-500 hover:bg-red-50">Delete</button>
+        </div>
+      </div>`).join('');
+            } catch { }
+        }
+
+        async function createPromo() {
+            const code = document.getElementById('promo-code-new').value.trim();
+            const type = document.getElementById('promo-type-new').value;
+            const value = parseFloat(document.getElementById('promo-value-new').value);
+            const min = parseFloat(document.getElementById('promo-min-new').value) || 0;
+            const max = parseFloat(document.getElementById('promo-max-new').value) || null;
+            const limit = parseInt(document.getElementById('promo-limit-new').value) || null;
+            if (!code || !value) { toast('Code and value are required', '⚠️'); return; }
+            try {
+                const r = await apiFetch('/admin/promos', { method: 'POST', body: JSON.stringify({ code, type, value, minOrderAmount: min, maxDiscount: max, usageLimit: limit }) });
+                const d = await r.json();
+                if (r.ok) { toast(`Promo ${d.promo.code} created 🎁`); loadPromos(); }
+                else toast(d.error || 'Failed', '❌');
+            } catch { }
+        }
+        async function togglePromo(id, isActive) {
+            await apiFetch(`/admin/promos/${id}`, { method: 'PATCH', body: JSON.stringify({ isActive }) });
+            loadPromos();
+        }
+        async function deletePromo(id) {
+            if (!confirm('Delete this promo code?')) return;
+            await apiFetch(`/admin/promos/${id}`, { method: 'DELETE' });
+            toast('Promo code deleted'); loadPromos();
+        }
+
+        // ── Helpers ────────────────────────────────────────────────────────────────
+        function statusBadge(s) {
+            const cls = { Pending: 'bg-yellow-100 text-yellow-700', Processing: 'bg-blue-100 text-blue-700', Shipped: 'bg-purple-100 text-purple-700', Delivered: 'bg-green-100 text-green-700', Cancelled: 'bg-red-100 text-red-600' };
+            return `<span class="px-2 py-0.5 rounded-full text-xs font-medium ${cls[s] || 'bg-gray-100 text-gray-600'}">${s}</span>`;
+        }
+
+        function toast(msg, icon = '✅') {
+            const t = document.getElementById('toast');
+            document.getElementById('toast-msg').textContent = msg;
+            document.getElementById('toast-icon').textContent = icon;
+            t.classList.add('show');
+            clearTimeout(t._timer);
+            t._timer = setTimeout(() => t.classList.remove('show'), 3500);
+        }
+
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.getElementById('overlay').classList.remove('hidden');
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            const anyOpen = document.querySelectorAll('.modal-overlay.active').length > 0;
+            if (!anyOpen) document.getElementById('overlay').classList.add('hidden');
+        }
+        function closeAllModals() {
+            document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
+            document.getElementById('overlay').classList.add('hidden');
+            const drawer = document.getElementById('cart-drawer');
+            if (drawer.classList.contains('open')) drawer.classList.remove('open');
+        }
+
+        function setFilter(group, val, btn) {
+            filters[group] = val;
+            if (btn) {
+                document.querySelectorAll(`[data-group="${group}"]`).forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            }
+            fetchProducts();
+        }
+
+        function debounceSearch(val) {
+            searchQ = val;
+            clearTimeout(searchTimer);
+            if (document.getElementById('search-input')) document.getElementById('search-input').value = val;
+            if (document.getElementById('search-mobile')) document.getElementById('search-mobile').value = val;
+            searchTimer = setTimeout(fetchProducts, 400);
+        }
+
+        function clearFilters() {
+            filters = { light: 'All', care: 'All', category: 'All' };
+            searchQ = '';
+            document.querySelectorAll('.filter-pill').forEach(b => {
+                if (b.getAttribute('data-val') === 'All') b.classList.add('active');
+                else b.classList.remove('active');
+            });
+            document.getElementById('search-input').value = '';
+            document.getElementById('search-mobile').value = '';
+            document.getElementById('pet-safe-filter').checked = false;
+            document.getElementById('in-stock-filter').checked = false;
+            document.getElementById('min-price').value = '';
+            document.getElementById('max-price').value = '';
+            document.getElementById('sort-select').value = '';
+            fetchProducts();
+        }
+
+        function setView(v) {
+            currentView = v;
+            const gBtn = document.getElementById('view-grid');
+            const lBtn = document.getElementById('view-list');
+            gBtn.className = v === 'grid' ? 'p-1\\.5 rounded-lg bg-forest-600 text-white' : 'p-1\\.5 rounded-lg text-sage-500 hover:bg-sage-100';
+            lBtn.className = v === 'list' ? 'p-1\\.5 rounded-lg bg-forest-600 text-white' : 'p-1\\.5 rounded-lg text-sage-500 hover:bg-sage-100';
+            fetchProducts();
+        }
+
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+        // Admin modal auto-load analytics
+        const origAdminOpen = openModal;
+        document.getElementById('btn-admin').addEventListener('click', () => {
+            setTimeout(() => loadAnalytics(), 100);
+        });
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('navbar-scrolled', window.scrollY > 10);
+        });
+
+
+        // ══════════════════════════════════════════════════════════════════
+        // NEW FEATURES v4
+        // ══════════════════════════════════════════════════════════════════
+
+        // ── Dark Mode ─────────────────────────────────────────────────────
+        function toggleDarkMode() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('ecogrow_theme', next);
+        }
+        (function initTheme() {
+            const saved = localStorage.getItem('ecogrow_theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+
+        // ── Toast Queue (replaces old toast function) ─────────────────────
+        const toastQueue = [];
+        function toast(msg, icon = '✅') {
+            const container = document.getElementById('toast-container');
+            const el = document.createElement('div');
+            el.className = 'toast-item';
+            el.textContent = icon + ' ' + msg;
+            container.appendChild(el);
+            requestAnimationFrame(() => { el.classList.add('show'); });
+            setTimeout(() => {
+                el.classList.remove('show');
+                setTimeout(() => el.remove(), 300);
+            }, 3200);
+        }
+
+        // ── CSV Export ────────────────────────────────────────────────────
+        async function exportOrdersCSV() {
+            const status = document.getElementById('order-status-filter')?.value || 'All';
+            try {
+                const r = await apiFetch(`/admin/orders/export?status=${status}`);
+                if (!r.ok) { toast('Export failed', '❌'); return; }
+                const blob = await r.blob();
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url; a.download = `ecogrow_orders_${Date.now()}.csv`;
+                a.click(); URL.revokeObjectURL(url);
+                toast('CSV exported!');
+            } catch { toast('Export failed', '❌'); }
+        }
+
+        // ── Revenue Chart (Chart.js) ──────────────────────────────────────
+        let revenueChartInstance = null;
+        function renderRevenueChart(revenueByDay) {
+            const canvas = document.getElementById('revenue-chart');
+            if (!canvas || !revenueByDay || revenueByDay.length === 0) return;
+            if (revenueChartInstance) { revenueChartInstance.destroy(); }
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            const labels = revenueByDay.map(d => d._id.slice(5)); // MM-DD
+            const data = revenueByDay.map(d => d.revenue);
+            revenueChartInstance = new Chart(canvas, {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Revenue (₹)',
+                        data,
+                        borderColor: '#166534',
+                        backgroundColor: 'rgba(22,101,52,.12)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 3,
+                        pointBackgroundColor: '#166534'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: { label: ctx => '₹' + ctx.parsed.y.toFixed(0) } }
+                    },
+                    scales: {
+                        x: { ticks: { color: isDark ? '#9eb89e' : '#6b7280', maxRotation: 45, autoSkip: true, maxTicksLimit: 10 }, grid: { color: isDark ? '#2e3a2e' : '#f0f0f0' } },
+                        y: { ticks: { color: isDark ? '#9eb89e' : '#6b7280', callback: v => '₹' + v }, grid: { color: isDark ? '#2e3a2e' : '#f0f0f0' } }
+                    }
+                }
+            });
+        }
+
+        // ── Admin Products Tab ────────────────────────────────────────────
+        async function loadAdminProducts() {
+            const el = document.getElementById('admin-products-list');
+            el.innerHTML = '<p class="text-sage-400 text-center py-4 text-sm">Loading…</p>';
+            try {
+                const r = await fetch(`${API}/products?limit=50`);
+                const { products = [] } = await r.json();
+                if (!products.length) { el.innerHTML = '<p class="text-sage-400 text-sm text-center py-4">No products found</p>'; return; }
+                el.innerHTML = products.map(p => `
+                <div class="flex items-center gap-3 border border-sage-200 rounded-xl p-3">
+                    <img src="${p.imageUrl}" class="w-12 h-12 rounded-lg object-cover flex-shrink-0" onerror="this.src=''"/>
+                    <div class="flex-1 min-w-0">
+                        <p class="font-medium text-sm text-forest-900 truncate">${p.name}</p>
+                        <p class="text-xs text-sage-400">₹${p.price.toFixed(0)} · ${p.category} · Stock: ${p.stockQuantity}</p>
+                    </div>
+                    <div class="flex gap-2 flex-shrink-0">
+                        <button onclick="openEditProduct('${p._id}')" class="text-xs px-2 py-1 rounded border border-sage-200 hover:bg-sage-50 text-sage-700">Edit</button>
+                        <button onclick="deleteProduct('${p._id}','${p.name.replace(/'/g, "\\'")}',this)" class="text-xs px-2 py-1 rounded border border-red-200 text-red-500 hover:bg-red-50">Delete</button>
+                    </div>
+                </div>`).join('');
+            } catch { el.innerHTML = '<p class="text-red-400 text-sm text-center py-4">Failed to load</p>'; }
+        }
+
+        async function deleteProduct(id, name, btn) {
+            if (!confirm(`Delete "${name}"? This cannot be undone.`)) return;
+            btn.disabled = true; btn.textContent = '…';
+            const r = await apiFetch(`/admin/products/${id}`, { method: 'DELETE' });
+            if (r.ok) { toast(`${name} deleted`); loadAdminProducts(); fetchProducts(); }
+            else { toast('Delete failed', '❌'); btn.disabled = false; btn.textContent = 'Delete'; }
+        }
+
+        let editingProductId = null;
+        async function openEditProduct(id) {
+            try {
+                const r = await fetch(`${API}/products/${id}`);
+                const p = await r.json();
+                editingProductId = id;
+                document.getElementById('ap-name').value = p.name || '';
+                document.getElementById('ap-price').value = p.price || '';
+                document.getElementById('ap-desc').value = p.description || '';
+                document.getElementById('ap-image').value = p.imageUrl || '';
+                document.getElementById('ap-light').value = p.lightNeeds || 'Medium';
+                document.getElementById('ap-care').value = p.careDifficulty || 'Easy';
+                document.getElementById('ap-category').value = p.category || 'Indoor';
+                document.getElementById('ap-stock').value = p.stockQuantity || 0;
+                document.getElementById('ap-petsafe').checked = p.petSafe || false;
+                document.getElementById('ap-featured').checked = p.isFeatured || false;
+                // Switch to add tab (reused for editing)
+                adminTab('add');
+                document.querySelector('#admin-add button[onclick="handleAddProduct()"]').textContent = 'Save Changes';
+                toast('Editing: ' + p.name + ' — click Save Changes when done');
+            } catch { toast('Failed to load product', '❌'); }
+        }
+
+        // ── Patch adminTab to include products tab ────────────────────────
+        const _origAdminTab = adminTab;
+        adminTab = function (tab) {
+            const tabs = ['analytics', 'orders', 'add', 'promos', 'products'];
+            tabs.forEach(t => {
+                const el = document.getElementById('admin-' + t);
+                if (el) el.classList.toggle('hidden', t !== tab);
+                const btn = document.getElementById('tab-' + t);
+                if (btn) {
+                    if (t === tab) { btn.className = 'pb-2 admin-tab-active text-forest-700 cursor-pointer'; }
+                    else { btn.className = 'pb-2 border-b-2 border-transparent text-sage-500 cursor-pointer'; }
+                }
+            });
+            if (tab === 'orders') loadAdminOrders();
+            if (tab === 'analytics') loadAnalytics();
+            if (tab === 'promos') loadPromos();
+            if (tab === 'products') loadAdminProducts();
+            if (tab !== 'add') {
+                editingProductId = null;
+                const saveBtn = document.querySelector('#admin-add button[onclick="handleAddProduct()"]');
+                if (saveBtn) saveBtn.textContent = 'Add Plant';
+            }
+        };
+
+        // ── Patch handleAddProduct to support editing ─────────────────────
+        const _origHandleAddProduct = handleAddProduct;
+        handleAddProduct = async function () {
+            const errEl = document.getElementById('ap-err');
+            const data = {
+                name: document.getElementById('ap-name').value.trim(),
+                price: parseFloat(document.getElementById('ap-price').value),
+                description: document.getElementById('ap-desc').value.trim(),
+                imageUrl: document.getElementById('ap-image').value.trim(),
+                lightNeeds: document.getElementById('ap-light').value,
+                careDifficulty: document.getElementById('ap-care').value,
+                category: document.getElementById('ap-category').value.trim(),
+                petSafe: document.getElementById('ap-petsafe').checked,
+                isFeatured: document.getElementById('ap-featured').checked,
+                stockQuantity: parseInt(document.getElementById('ap-stock').value) || 0
+            };
+            if (!data.name || !data.price) { errEl.textContent = 'Name and price are required'; errEl.classList.remove('hidden'); return; }
+            errEl.classList.add('hidden');
+
+            if (editingProductId) {
+                // UPDATE
+                try {
+                    const r = await apiFetch(`/admin/products/${editingProductId}`, { method: 'PUT', body: JSON.stringify(data) });
+                    const d = await r.json();
+                    if (r.ok) {
+                        editingProductId = null;
+                        closeModal('admin-modal');
+                        toast(`${data.name} updated! 🌿`);
+                        fetchProducts();
+                    } else {
+                        errEl.textContent = Array.isArray(d.details) ? d.details.join(', ') : (d.error || 'Failed');
+                        errEl.classList.remove('hidden');
+                    }
+                } catch { errEl.textContent = 'Network error'; errEl.classList.remove('hidden'); }
+            } else {
+                // CREATE (original behaviour)
+                try {
+                    const r = await apiFetch('/admin/products', { method: 'POST', body: JSON.stringify(data) });
+                    const d = await r.json();
+                    if (r.ok) { closeModal('admin-modal'); toast(`${data.name} added! 🌿`); fetchProducts(); }
+                    else {
+                        errEl.textContent = Array.isArray(d.details) ? d.details.join(', ') : (d.error || 'Failed');
+                        errEl.classList.remove('hidden');
+                    }
+                } catch { errEl.textContent = 'Network error'; errEl.classList.remove('hidden'); }
+            }
+        };
+
+        // ── Patch loadAnalytics to also render revenue chart ─────────────
+        const _origLoadAnalytics = loadAnalytics;
+        loadAnalytics = async function () {
+            try {
+                const r = await apiFetch('/admin/analytics');
+                const d = await r.json();
+                const s = d.summary;
+                document.getElementById('analytics-stats').innerHTML = [
+                    { label: 'Total Revenue', val: `₹${Number(s.totalRevenue).toLocaleString('en-IN')}`, icon: '💰' },
+                    { label: 'Total Orders', val: s.totalOrders, icon: '📦' },
+                    { label: 'Customers', val: s.totalCustomers, icon: '👥' },
+                    { label: 'Products', val: s.totalProducts, icon: '🌿' },
+                    { label: 'Revenue (30d)', val: `₹${Number(s.recentRevenue).toLocaleString('en-IN')}`, icon: '📈' },
+                    { label: 'Orders (30d)', val: s.recentOrders, icon: '🛒' },
+                ].map(c => `<div class="stat-card"><p class="text-xs text-sage-500 mb-1">${c.icon} ${c.label}</p><p class="text-xl font-bold text-forest-900">${c.val}</p></div>`).join('');
+
+                // Revenue chart
+                renderRevenueChart(d.revenueByDay || []);
+
+                document.getElementById('analytics-top').innerHTML = (d.topProducts || []).map(p =>
+                    `<div class="flex justify-between items-center bg-sage-50 rounded-lg px-3 py-2 text-sm">
+                        <span class="font-medium text-forest-900">${p._id}</span>
+                        <span class="text-sage-500">${p.sold} sold · ₹${Number(p.revenue).toFixed(0)}</span>
+                    </div>`).join('') || '<p class="text-sage-400 text-sm">No data yet</p>';
+
+                document.getElementById('analytics-lowstock').innerHTML = (d.lowStockProducts || []).map(p =>
+                    `<div class="flex justify-between items-center bg-yellow-100 rounded-lg px-3 py-2 text-sm">
+                        <span class="font-medium text-forest-900">${p.name}</span>
+                        <span class="text-yellow-700 font-semibold">${p.stockQuantity} left ⚠</span>
+                    </div>`).join('') || '<p class="text-green-700 text-sm">All products have healthy stock 🌿</p>';
+            } catch (e) { console.error('Analytics error', e); }
+        };
+
+        // ── AI Plant Advisor Chatbot ───────────────────────────────────────
+        let chatOpen = false;
+        let chatContext = '';
+
+        function toggleChat() {
+            chatOpen = !chatOpen;
+            const win = document.getElementById('chat-window');
+            win.classList.toggle('hidden', !chatOpen);
+            if (chatOpen) document.getElementById('chat-input').focus();
+        }
+
+        async function sendChat() {
+            const input = document.getElementById('chat-input');
+            const msg = input.value.trim();
+            if (!msg) return;
+            input.value = '';
+
+            appendChatMsg(msg, 'user');
+            const typingEl = appendChatMsg('Thinking…', 'bot typing');
+
+            try {
+                const r = await fetch(`${API}/ai/advisor`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', ...(getToken() ? { Authorization: 'Bearer ' + getToken() } : {}) },
+                    body: JSON.stringify({ message: msg, productContext: chatContext })
+                });
+                const d = await r.json();
+                typingEl.remove();
+                appendChatMsg(d.reply || 'Sorry, I had trouble answering. Please try again!', 'bot');
+            } catch {
+                typingEl.remove();
+                appendChatMsg('Network error. Please check the server is running.', 'bot');
+            }
+        }
+
+        function appendChatMsg(text, type) {
+            const msgs = document.getElementById('chat-messages');
+            const el = document.createElement('div');
+            el.className = 'chat-msg ' + type;
+            el.textContent = text;
+            msgs.appendChild(el);
+            msgs.scrollTop = msgs.scrollHeight;
+            return el;
+        }
+
+        // Set chat context when product detail opens
+        const _origOpenProduct = openProduct;
+        openProduct = async function (id) {
+            await _origOpenProduct(id);
+            // Set context for chatbot
+            const p = allProducts.find(x => x._id === id);
+            if (p) chatContext = `${p.name} — a ${p.careDifficulty} care ${p.category} plant`;
+        };
+
+        // Start app
+        init();
+    </script>
+</body>
+
+</html>
